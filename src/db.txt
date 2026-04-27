@@ -1,0 +1,57 @@
+-- Create roles table
+CREATE TABLE public.roles (
+  id INT PRIMARY KEY,
+  name TEXT UNIQUE NOT NULL
+);
+
+-- Insert default roles
+INSERT INTO public.roles (id, name)
+VALUES
+  (1, 'admin'),
+  (2, 'editor'),
+  (3, 'viewer');
+
+-- Create pages table
+CREATE TABLE public.pages (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  slug TEXT UNIQUE NOT NULL,
+  title TEXT NOT NULL,
+  content TEXT,
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+  updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+-- Create products table
+CREATE TABLE public.products (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  name TEXT NOT NULL,
+  description TEXT,
+  category TEXT,
+  image_url TEXT,
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+  updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+-- Add role_id to auth.users table (if not already present)
+-- This assumes you are using Supabase's default auth.users table.
+-- You might need to adjust this based on your Supabase setup.
+ALTER TABLE auth.users
+ADD COLUMN role_id INT REFERENCES public.roles(id) DEFAULT 3; -- Default to 'viewer' role
+
+-- Dummy data for public.pages
+INSERT INTO public.pages (slug, title, content)
+VALUES
+  ('home', 'Welcome to Nusula Brother Enterprises', 'This is the dummy content for the home page. It will be replaced by actual theme content.'),
+  ('about-us', 'About Nusula Brother Enterprises', 'This is the dummy content for the about us page. Learn more about our company and mission.'),
+  ('our-team', 'Meet Our Team', 'This is the dummy content for the our team page. Get to know the people behind our success.'),
+  ('contact', 'Contact Us', 'This is the dummy content for the contact page. Reach out to us for any inquiries.');
+
+-- Dummy data for public.products
+INSERT INTO public.products (name, description, category, image_url)
+VALUES
+  ('Cake Gel', 'A premium cake gel for enhanced texture and volume in baked goods.', 'Cake', '/images/cake-gel.jpg'),
+  ('CR600', 'A versatile leavening agent for various baking applications.', 'Bread ingredients', '/images/cr600.jpg'),
+  ('CR630', 'An advanced humectant for improved moisture retention in baked products.', 'Bread ingredients', '/images/cr630.jpg'),
+  ('Pan Grease', 'High-quality pan grease for easy release and perfect bakes.', 'Sprays', '/images/pan-grease.jpg'),
+  ('Caramel Color', 'Natural caramel coloring for rich, appealing baked goods.', 'Cake', '/images/caramel-color.jpg'),
+  ('Calcium Propionate', 'An effective mold inhibitor for extending the shelf life of bread.', 'Bread ingredients', '/images/calcium-propionate.jpg');
