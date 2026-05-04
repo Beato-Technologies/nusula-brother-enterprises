@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import AppImage from "./AppImage";
 
 export default function Service() {
     return (
@@ -6,13 +7,13 @@ export default function Service() {
             <div className="container">
                 <div className="section-title-area">
                     <div className="section-title">
-                        <span>What We Do</span>
+                        <span>Our Specializations</span>
                         <h2>
-                            We Solve IT Problems <br /> With Technology
+                            Premium Food Ingredients <br /> For East Africa
                         </h2>
                     </div>
-                    <Link href="/service" className="theme-btn">
-                        See all Services
+                    <Link href="/services" className="theme-btn">
+                        Explore All Services
                         <i className="fa-solid fa-arrow-right-long" />
                     </Link>
                 </div>
@@ -20,23 +21,23 @@ export default function Service() {
                     <div className="col-xl-3 col-lg-4 col-md-6">
                         <div className="service-card-items">
                             <div className="service-image">
-                                <img src="/assets/img/service/02.jpg" alt="service-img" />
+                                <AppImage src="/assets/img/service/02.jpg" alt="service-img" width={270} height={160} />
                             </div>
                             <div className="icon-2">
-                                <img src="/assets/img/service/icon/s-icon-1.svg" alt="img" />
+                                <AppImage src="/assets/img/service/icon/s-icon-1.svg" alt="img" width={40} height={40} />
                             </div>
                             <div className="service-content">
                                 <div className="icon">
-                                    <img src="/assets/img/service/icon/s-icon-1.svg" alt="img" />
+                                    <AppImage src="/assets/img/service/icon/s-icon-1.svg" alt="img" width={40} height={40} />
                                 </div>
                                 <h4>
-                                    <Link href="/service-details">Database Security</Link>
+                                    <Link href="/service-details">Food Ingredient Trading</Link>
                                 </h4>
                                 <p>
-                                    accumsan. Pellentesque in magna tincidunt, this is.
+                                    Supply of specialized food ingredients across East Africa with dependable sourcing and delivery.
                                 </p>
                                 <Link href="/service-details" className="theme-btn-2 mt-3">
-                                    read More
+                                    Learn More
                                     <i className="fa-solid fa-arrow-right-long" />
                                 </Link>
                             </div>
@@ -45,23 +46,23 @@ export default function Service() {
                     <div className="col-xl-3 col-lg-4 col-md-6">
                         <div className="service-card-items">
                             <div className="service-image">
-                                <img src="/assets/img/service/03.jpg" alt="service-img" />
+                                <AppImage src="/assets/img/service/03.jpg" alt="service-img" width={270} height={160} />
                             </div>
                             <div className="icon-2">
-                                <img src="/assets/img/service/icon/s-icon-2.svg" alt="img" />
+                                <AppImage src="/assets/img/service/icon/s-icon-2.svg" alt="img" width={40} height={40} />
                             </div>
                             <div className="service-content">
                                 <div className="icon">
-                                    <img src="/assets/img/service/icon/s-icon-2.svg" alt="img" />
+                                    <AppImage src="/assets/img/service/icon/s-icon-2.svg" alt="img" width={40} height={40} />
                                 </div>
                                 <h4>
-                                    <Link href="/service-details">IT Consultancy</Link>
+                                    <Link href="/service-details">Food Manufacturing</Link>
                                 </h4>
                                 <p>
-                                    accumsan. Pellentesque in magna tincidunt, this is.
+                                    Large-scale production under the Fastbakes brand with consistent quality and safety controls.
                                 </p>
                                 <Link href="/service-details" className="theme-btn-2 mt-3">
-                                    read More
+                                    Learn More
                                     <i className="fa-solid fa-arrow-right-long" />
                                 </Link>
                             </div>
@@ -70,23 +71,23 @@ export default function Service() {
                     <div className="col-xl-3 col-lg-4 col-md-6">
                         <div className="service-card-items">
                             <div className="service-image">
-                                <img src="/assets/img/service/04.jpg" alt="service-img" />
+                                <AppImage src="/assets/img/service/04.jpg" alt="service-img" width={270} height={160} />
                             </div>
                             <div className="icon-2">
-                                <img src="/assets/img/service/icon/s-icon-4.svg" alt="img" />
+                                <AppImage src="/assets/img/service/icon/s-icon-4.svg" alt="img" width={40} height={40} />
                             </div>
                             <div className="service-content">
                                 <div className="icon">
-                                    <img src="/assets/img/service/icon/s-icon-5.svg" alt="img" />
+                                    <AppImage src="/assets/img/service/icon/s-icon-5.svg" alt="img" width={40} height={40} />
                                 </div>
                                 <h4>
-                                    <Link href="/service-details">App Development</Link>
+                                    <Link href="/service-details">Research & Innovation</Link>
                                 </h4>
                                 <p>
-                                    accumsan. Pellentesque in magna tincidunt, this is.
+                                    Continuous research to develop practical ingredient solutions for modern food processing.
                                 </p>
                                 <Link href="/service-details" className="theme-btn-2 mt-3">
-                                    read More
+                                    Learn More
                                     <i className="fa-solid fa-arrow-right-long" />
                                 </Link>
                             </div>
@@ -95,23 +96,23 @@ export default function Service() {
                     <div className="col-xl-3 col-lg-4 col-md-6">
                         <div className="service-card-items">
                             <div className="service-image">
-                                <img src="/assets/img/service/05.jpg" alt="service-img" />
+                                <AppImage src="/assets/img/service/05.jpg" alt="service-img" width={270} height={160} />
                             </div>
                             <div className="icon-2">
-                                <img src="/assets/img/service/icon/s-icon-3.svg" alt="img" />
+                                <AppImage src="/assets/img/service/icon/s-icon-3.svg" alt="img" width={40} height={40} />
                             </div>
                             <div className="service-content">
                                 <div className="icon">
-                                    <img src="/assets/img/service/icon/s-icon-3.svg" alt="img" />
+                                    <AppImage src="/assets/img/service/icon/s-icon-3.svg" alt="img" width={40} height={40} />
                                 </div>
                                 <h4>
-                                    <Link href="/service-details">Database Security</Link>
+                                    <Link href="/service-details">Regional Distribution</Link>
                                 </h4>
                                 <p>
-                                    accumsan. Pellentesque in magna tincidunt, this is.
+                                    Efficient distribution networks across Uganda and East Africa to keep your operations running.
                                 </p>
                                 <Link href="/service-details" className="theme-btn-2 mt-3">
-                                    read More
+                                    Learn More
                                     <i className="fa-solid fa-arrow-right-long" />
                                 </Link>
                             </div>
@@ -129,15 +130,15 @@ export default function Service() {
                             <div className="content">
                                 <span>Call Us Now</span>
                                 <h4>
-                                    <Link href="/tel:+2085550112">+208-555-0112</Link>
+                                    <Link href="/tel:+256703412545">+256-703-412-545</Link>
                                 </h4>
                             </div>
                         </div>
                         <h3>
-                            Stay Connected With <br /> Cutting Edge IT
+                            Partner With Us For <br /> Quality Food Ingredients
                         </h3>
                         <Link href="/contact" className="theme-btn bg-white">
-                            get A Quote
+                            Request Quotation
                             <i className="fa-solid fa-arrow-right-long" />
                         </Link>
                     </div>

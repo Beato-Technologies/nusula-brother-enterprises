@@ -1,6 +1,7 @@
 'use client'
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
+import AppImage from "./AppImage";
 
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
@@ -39,52 +40,52 @@ export default function BrandSlider() {
             <Swiper {...swiperOptions} className="swiper-wrapper">
                 <SwiperSlide>
                     <div className="brand-image">
-                        <img src="/assets/img/brand.png" alt="brand-img" />
+                        <AppImage src="/assets/img/brand.png" alt="brand-img" width={154} height={31} />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="brand-image">
-                        <img src="/assets/img/brand.png" alt="brand-img" />
+                        <AppImage src="/assets/img/brand.png" alt="brand-img" width={154} height={31} />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="brand-image">
-                        <img src="/assets/img/brand.png" alt="brand-img" />
+                        <AppImage src="/assets/img/brand.png" alt="brand-img" width={154} height={31} />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="brand-image">
-                        <img src="/assets/img/brand.png" alt="brand-img" />
+                        <AppImage src="/assets/img/brand.png" alt="brand-img" width={154} height={31} />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="brand-image">
-                        <img src="/assets/img/brand.png" alt="brand-img" />
+                        <AppImage src="/assets/img/brand.png" alt="brand-img" width={154} height={31} />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="brand-image">
-                        <img src="/assets/img/brand.png" alt="brand-img" />
+                        <AppImage src="/assets/img/brand.png" alt="brand-img" width={154} height={31} />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="brand-image">
-                        <img src="/assets/img/brand.png" alt="brand-img" />
+                        <AppImage src="/assets/img/brand.png" alt="brand-img" width={154} height={31} />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="brand-image">
-                        <img src="/assets/img/brand.png" alt="brand-img" />
+                        <AppImage src="/assets/img/brand.png" alt="brand-img" width={154} height={31} />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="brand-image">
-                        <img src="/assets/img/brand.png" alt="brand-img" />
+                        <AppImage src="/assets/img/brand.png" alt="brand-img" width={154} height={31} />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="brand-image">
-                        <img src="/assets/img/brand.png" alt="brand-img" />
+                        <AppImage src="/assets/img/brand.png" alt="brand-img" width={154} height={31} />
                     </div>
                 </SwiperSlide>
             </Swiper>

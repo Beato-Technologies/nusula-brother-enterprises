@@ -25,14 +25,15 @@ const AdminDashboardPage = () => {
   return (
     <div className="container mx-auto p-8">
       <h1 className="text-3xl font-bold mb-4">Admin Dashboard</h1>
-      <p className="text-lg">Welcome, Admin {user.email}! You have full access to administrative features.</p>
+      <p className="text-lg">Welcome, Admin {user.email}! You have full access to Nusula and Brother Enterprises administrative features.</p>
       {/* Admin-specific content and tools will go here */}
       <div className="mt-8 p-4 border rounded-lg bg-red-100">
-        <h2 className="text-xl font-semibold mb-2">Admin Tools</h2>
+        <h2 className="text-xl font-semibold mb-2">Nusula Admin Tools</h2>
         <ul>
-          <li>Manage Users</li>
-          <li>Manage Content</li>
-          <li>View Analytics</li>
+          <li>Manage Product Inventory</li>
+          <li>Manage Orders and Customers</li>
+          <li>View Sales Analytics</li>
+          <li>Manage Team and Operations</li>
         </ul>
       </div>
     </div>

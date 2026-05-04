@@ -20,7 +20,7 @@ const ContactPage = () => {
                       <div className="content">
                         <p>Call Us 7/24</p>
                         <h3>
-                          <Link href="tel:+2085550112">+208-555-0112</Link>
+                          <Link href="tel:+256703412545">+256-703-412-545</Link>
                         </h3>
                       </div>
                     </div>
@@ -35,7 +35,7 @@ const ContactPage = () => {
                       <div className="content">
                         <p>Make a Quote</p>
                         <h3>
-                          <Link href="mailto:infotech@gmail.com">Infotech@gmail.com</Link>
+                          <Link href="mailto:info@nusulabros.com">info@nusulabros.com</Link>
                         </h3>
                       </div>
                     </div>
@@ -47,9 +47,9 @@ const ContactPage = () => {
                         </svg>
                       </div>
                       <div className="content">
-                        <p>Location</p>
+                        <p>Location (HQ)</p>
                         <h3>
-                          4517 Washington ave.
+                          Kampala, Uganda
                         </h3>
                       </div>
                     </div>
@@ -58,9 +58,9 @@ const ContactPage = () => {
               </div>
               <div className="col-lg-6">
                 <div className="contact-content">
-                  <h2>Ready to Get Started?</h2>
+                  <h2>Interested in Our Products?</h2>
                   <p>
-                    Nullam varius, erat quis iaculis dictum, eros urna varius eros, ut blandit felis odio in turpis. Quisque rhoncus, eros in auctor ultrices,
+                    Get in touch with Nusula and Brother Enterprises to discuss your food ingredient needs. We are committed to quality products, reliable supply, and strong client support.
                   </p>
                   <form action="contact.php" id="contact-form" method="POST" className="contact-form-items">
                     <div className="row g-4">
@@ -99,7 +99,7 @@ const ContactPage = () => {
       <div className="map-section">
         <div className="map-items">
           <div className="googpemap">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6678.7619084840835!2d144.9618311901502!3d-37.81450084255415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b4758afc1d%3A0x3119cc820fdfc62e!2sEnvato!5e0!3m2!1sen!2sbd!4v1641984054261!5m2!1sen!2sbd" style={{ border: 0 }} allowFullScreen loading="lazy" />
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7574843135867!2d32.599612575682485!3d0.31640406402436166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbdb1af7678bf%3A0xd8881d51eddfae1c!2sNusula%20%26%20Brothers%20Enterprise!5e0!3m2!1sen!2sau!4v1777738653413!5m2!1sen!2sau" style={{ border: 0 }} allowFullScreen loading="lazy" />
           </div>
         </div>
       </div>

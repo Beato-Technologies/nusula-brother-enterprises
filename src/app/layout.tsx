@@ -14,8 +14,8 @@ const kumbh = Kumbh_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "NBEnterprises - Cake Ingredients CMS",
-  description: "CMS for Nusula Brother Enterprises",
+  title: "Nusula and Brother Enterprises | Fastbakes Food Ingredients",
+  description: "Nusula and Brother Enterprises provides specialized food ingredients, manufacturing, and regional distribution across East Africa.",
 };
 
 export default function RootLayout({
@@ -27,7 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${kumbh.className}`}>
         <AuthProvider>
-          <Header scroll={true} />
+          <Header scroll={false} />
           <main>{children}</main>
           <Footer />
         </AuthProvider>

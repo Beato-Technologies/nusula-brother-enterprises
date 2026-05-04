@@ -1,13 +1,14 @@
 import Link from 'next/link';
+import AppImage from './AppImage';
 
 export default function Team() {
     return (
         <section className="team-section-3 fix section-padding section-bg" id="team">
             <div className="line-shape">
-                <img src="/assets/img/team/line-shape.png" alt="shape-img" />
+                <AppImage src="/assets/img/team/line-shape.png" alt="shape-img" width={465} height={605} />
             </div>
             <div className="mask-shape">
-                <img src="/assets/img/team/mask-shape-2.png" alt="shape-img" />
+                <AppImage src="/assets/img/team/mask-shape-2.png" alt="shape-img" width={366} height={395} />
             </div>
             <div className="container">
                 <div className="section-title-area">
@@ -22,11 +23,11 @@ export default function Team() {
                         <i className="fa-solid fa-arrow-right-long" />
                     </Link>
                 </div>
-                <div className="row">
-                    <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                <div className="row team-equal-height-row">
+                    <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp d-flex" data-wow-delay=".3s">
                         <div className="single-team-items">
                             <div className="team-image">
-                                <img src="/assets/img/team/04.jpg" alt="team-img" />
+                                <AppImage src="/assets/img/team/Nusula.webp" alt="team-img" width={270} height={280} />
                                 <div className="social-profile">
                                     <ul>
                                         <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
@@ -38,16 +39,16 @@ export default function Team() {
                             </div>
                             <div className="team-content text-center">
                                 <h3>
-                                    <Link href="/team-details">Marvin McKinney</Link>
+                                    <Link href="/team-details">Hajjati Nemwa Nusula Njogi</Link>
                                 </h3>
-                                <p>Web Designer</p>
+                                <p>CEO</p>
                             </div>
                         </div>
                     </div>
-                    <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                    <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp d-flex" data-wow-delay=".5s">
                         <div className="single-team-items">
                             <div className="team-image">
-                                <img src="/assets/img/team/05.jpg" alt="team-img" />
+                                <AppImage src="/assets/img/team/Lujja.webp" alt="team-img" width={270} height={280} />
                                 <div className="social-profile">
                                     <ul>
                                         <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
@@ -59,16 +60,16 @@ export default function Team() {
                             </div>
                             <div className="team-content text-center">
                                 <h3>
-                                    <Link href="/team-details">Marvin McKinney</Link>
+                                    <Link href="/team-details">Mr. Lujja Nasur Wawire</Link>
                                 </h3>
-                                <p>Web Designer</p>
+                                <p>Executive Director</p>
                             </div>
                         </div>
                     </div>
-                    <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                    <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp d-flex" data-wow-delay=".7s">
                         <div className="single-team-items">
                             <div className="team-image">
-                                <img src="/assets/img/team/06.jpg" alt="team-img" />
+                                <AppImage src="/assets/img/team/Ismail.webp" alt="team-img" width={270} height={280} />
                                 <div className="social-profile">
                                     <ul>
                                         <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
@@ -80,16 +81,16 @@ export default function Team() {
                             </div>
                             <div className="team-content text-center">
                                 <h3>
-                                    <Link href="/team-details">Marvin McKinney</Link>
+                                    <Link href="/team-details">Kabwanga Ismail Tijjani, PhD</Link>
                                 </h3>
-                                <p>Web Designer</p>
+                                <p>Director Quality Control & H/R</p>
                             </div>
                         </div>
                     </div>
-                    <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".9s">
+                    <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp d-flex" data-wow-delay=".9s">
                         <div className="single-team-items">
                             <div className="team-image">
-                                <img src="/assets/img/team/07.jpg" alt="team-img" />
+                                <AppImage src="/assets/img/team/generic.jpg" alt="team-img" width={270} height={280} />
                                 <div className="social-profile">
                                     <ul>
                                         <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
@@ -101,9 +102,9 @@ export default function Team() {
                             </div>
                             <div className="team-content text-center">
                                 <h3>
-                                    <Link href="/team-details">Marvin McKinney</Link>
+                                    <Link href="/team-details">Mirembe Mida</Link>
                                 </h3>
-                                <p>Web Designer</p>
+                                <p>General Manager, Factory</p>
                             </div>
                         </div>
                     </div>

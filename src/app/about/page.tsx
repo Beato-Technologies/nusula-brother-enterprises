@@ -1,4 +1,5 @@
 import BrandSlider from '@/components/BrandSlider';
+import AppImage from '../../components/AppImage';
 import CounterUp from '@/components/CounterUp';
 import ProductSlider from '@/components/ProductSlider';
 import Link from 'next/link';
@@ -14,20 +15,20 @@ export default function AboutPage() {
               <div className="col-lg-6">
                 <div className="about-image-items">
                   <div className="circle-shape">
-                    <img src="/assets/img/about/circle.png" alt="shape-img" />
+                    <AppImage src="/assets/img/about/circle.png" alt="shape-img" width={138} height={138} />
                   </div>
                   <div className="counter-shape float-bob-y">
                     <div className="icon">
-                      <img src="/assets/img/about/icon-1.svg" alt="icon-img" />
+                      <AppImage src="/assets/img/about/icon-1.svg" alt="icon-img" width={40} height={40} />
                     </div>
                     <div className="content">
-                      <h3><CounterUp count={25} />Years</h3>
-                      <p>Of Experience</p>
+                      <h3><CounterUp count={8} />+ Years</h3>
+                      <p>of Industry Growth</p>
                     </div>
                   </div>
                   <div className="about-image-1 bg-cover wow fadeInLeft" data-wow-delay=".3s" style={{ backgroundImage: 'url("assets/img/about/03.png")' }}>
                     <div className="about-image-2 wow fadeInUp" data-wow-delay=".5s">
-                      <img src="/assets/img/about/04.jpg" alt="about-img" />
+                      <AppImage src="/assets/img/about/04.jpg" alt="about-img" width={247} height={271} />
                     </div>
                   </div>
                 </div>
@@ -35,34 +36,34 @@ export default function AboutPage() {
               <div className="col-lg-6 mt-4 mt-lg-0">
                 <div className="about-content">
                   <div className="section-title">
-                    <span className="wow fadeInUp">ABOUT INFOTECK</span>
+                    <span className="wow fadeInUp">ABOUT NUSULA & BROTHER ENTERPRISES</span>
                     <h2 className="wow fadeInUp" data-wow-delay=".3s">
-                      We Are Increasing Business Success With <span>Technology</span>
+                      Specialized Food Ingredients for <span>East Africa</span>
                     </h2>
                   </div>
                   <p className="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                    It is a long established fact that a reader will be distracted the readable <br /> content of a page when looking at layout the point.
+                    Since 2018, we have grown from a trading company into a leading trading and manufacturing business through research and innovation. <br /> Today, Fastbakes is a prominent brand in Uganda and across East Africa.
                   </p>
                   <div className="about-icon-items">
                     <div className="icon-items wow fadeInUp" data-wow-delay=".7s">
                       <div className="icon">
-                        <img src="/assets/img/about/icon-4.svg" alt="icon-img" />
+                        <AppImage src="/assets/img/about/icon-4.svg" alt="icon-img" width={44} height={44} />
                       </div>
                       <div className="content">
-                        <h4>Problem Solving</h4>
+                        <h4>Vision</h4>
                         <p>
-                          Aliquam erat volutpat Nullam imperdiet
+                          To be the leading manufacturer and supplier of specialized food ingredients.
                         </p>
                       </div>
                     </div>
                     <div className="icon-items wow fadeInUp" data-wow-delay=".9s">
                       <div className="icon">
-                        <img src="/assets/img/about/icon-5.svg" alt="icon-img" />
+                        <AppImage src="/assets/img/about/icon-5.svg" alt="icon-img" width={44} height={44} />
                       </div>
                       <div className="content">
-                        <h4>Mission &amp; Vision</h4>
+                        <h4>Mission</h4>
                         <p>
-                          Ut vehiculadictumst. Maecenas ante.
+                          We strive constantly to supply sustainable solutions that connect food processing industries.
                         </p>
                       </div>
                     </div>
@@ -75,10 +76,10 @@ export default function AboutPage() {
                       </Link>
                     </div>
                     <div className="author-image wow fadeInUp" data-wow-delay=".7s">
-                      <img src="/assets/img/about/author.png" alt="author-img" />
+                      <AppImage src="/assets/img/about/author.png" alt="author-img" width={56} height={56} />
                       <div className="content">
-                        <h6>Ronald Richards</h6>
-                        <p>Co, Founder</p>
+                        <h6>Fastbakes Brand</h6>
+                        <p>Trusted in Uganda and East Africa</p>
                       </div>
                     </div>
                   </div>
@@ -91,26 +92,26 @@ export default function AboutPage() {
       {/* Offer Section Start */}
       <section className="offer-section fix section-bg-2 section-padding">
         <div className="line-shape">
-          <img src="/assets/img/team/line-shape.png" alt="shape-img" />
+          <AppImage src="/assets/img/team/line-shape.png" alt="shape-img" width={465} height={605} />
         </div>
         <div className="mask-shape">
-          <img src="/assets/img/team/mask-shape.png" alt="shape-img" />
+          <AppImage src="/assets/img/team/mask-shape.png" alt="shape-img" width={343} height={610} />
         </div>
         <div className="container">
           <div className="section-title text-center">
-            <span className="wow fadeInUp">Our offering</span>
+            <span className="wow fadeInUp">Our Core Strengths</span>
             <h2 className="text-white wow fadeInUp" data-wow-delay=".3s">
-              Enhance and Pioneer Using <br /> Technology Trends
+              Building Sustainable Value <br /> In Food Processing
             </h2>
           </div>
           <div className="row">
             <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".2s">
               <div className="offer-items">
                 <div className="shape-top">
-                  <img src="/assets/img/shape/offer-top.png" alt="shape-img" />
+                  <AppImage src="/assets/img/shape/offer-top.png" alt="shape-img" width={40} height={40} />
                 </div>
                 <div className="shape-bottom">
-                  <img src="/assets/img/shape/offer-bottom.png" alt="shape-img" />
+                  <AppImage src="/assets/img/shape/offer-bottom.png" alt="shape-img" width={40} height={40} />
                 </div>
                 <div className="icon">
                   <svg width={36} height={36} viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -125,17 +126,17 @@ export default function AboutPage() {
                   </svg>
                 </div>
                 <div className="content">
-                  <h5>Website</h5>
+                  <h5>Trading</h5>
                 </div>
               </div>
             </div>
             <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".4s">
               <div className="offer-items">
                 <div className="shape-top">
-                  <img src="/assets/img/shape/offer-top.png" alt="shape-img" />
+                  <AppImage src="/assets/img/shape/offer-top.png" alt="shape-img" width={40} height={40} />
                 </div>
                 <div className="shape-bottom">
-                  <img src="/assets/img/shape/offer-bottom.png" alt="shape-img" />
+                  <AppImage src="/assets/img/shape/offer-bottom.png" alt="shape-img" width={40} height={40} />
                 </div>
                 <div className="icon">
                   <svg width={36} height={36} viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -144,17 +145,17 @@ export default function AboutPage() {
                   </svg>
                 </div>
                 <div className="content">
-                  <h5>Android</h5>
+                  <h5>Manufacturing</h5>
                 </div>
               </div>
             </div>
             <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".6s">
               <div className="offer-items active">
                 <div className="shape-top">
-                  <img src="/assets/img/shape/offer-top.png" alt="shape-img" />
+                  <AppImage src="/assets/img/shape/offer-top.png" alt="shape-img" width={40} height={40} />
                 </div>
                 <div className="shape-bottom">
-                  <img src="/assets/img/shape/offer-bottom.png" alt="shape-img" />
+                  <AppImage src="/assets/img/shape/offer-bottom.png" alt="shape-img" width={40} height={40} />
                 </div>
                 <div className="icon">
                   <svg width={36} height={36} viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -170,17 +171,17 @@ export default function AboutPage() {
                   </svg>
                 </div>
                 <div className="content">
-                  <h5>IOS</h5>
+                  <h5>Research & Innovation</h5>
                 </div>
               </div>
             </div>
             <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".8s">
               <div className="offer-items">
                 <div className="shape-top">
-                  <img src="/assets/img/shape/offer-top.png" alt="shape-img" />
+                  <AppImage src="/assets/img/shape/offer-top.png" alt="shape-img" width={40} height={40} />
                 </div>
                 <div className="shape-bottom">
-                  <img src="/assets/img/shape/offer-bottom.png" alt="shape-img" />
+                  <AppImage src="/assets/img/shape/offer-bottom.png" alt="shape-img" width={40} height={40} />
                 </div>
                 <div className="icon">
                   <svg width={36} height={36} viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -192,17 +193,17 @@ export default function AboutPage() {
                   </svg>
                 </div>
                 <div className="content">
-                  <h5>Watch</h5>
+                  <h5>Quality Assurance</h5>
                 </div>
               </div>
             </div>
             <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".9s">
               <div className="offer-items">
                 <div className="shape-top">
-                  <img src="/assets/img/shape/offer-top.png" alt="shape-img" />
+                  <AppImage src="/assets/img/shape/offer-top.png" alt="shape-img" width={40} height={40} />
                 </div>
                 <div className="shape-bottom">
-                  <img src="/assets/img/shape/offer-bottom.png" alt="shape-img" />
+                  <AppImage src="/assets/img/shape/offer-bottom.png" alt="shape-img" width={40} height={40} />
                 </div>
                 <div className="icon">
                   <svg width={36} height={36} viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -219,17 +220,17 @@ export default function AboutPage() {
                   </svg>
                 </div>
                 <div className="content">
-                  <h5>Tv</h5>
+                  <h5>Regional Distribution</h5>
                 </div>
               </div>
             </div>
             <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".9s">
               <div className="offer-items">
                 <div className="shape-top">
-                  <img src="/assets/img/shape/offer-top.png" alt="shape-img" />
+                  <AppImage src="/assets/img/shape/offer-top.png" alt="shape-img" width={40} height={40} />
                 </div>
                 <div className="shape-bottom">
-                  <img src="/assets/img/shape/offer-bottom.png" alt="shape-img" />
+                  <AppImage src="/assets/img/shape/offer-bottom.png" alt="shape-img" width={40} height={40} />
                 </div>
                 <div className="icon">
                   <svg width={24} height={36} viewBox="0 0 24 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -238,7 +239,7 @@ export default function AboutPage() {
                   </svg>
                 </div>
                 <div className="content">
-                  <h5>IOT</h5>
+                  <h5>Client Partnership</h5>
                 </div>
               </div>
             </div>
@@ -248,17 +249,17 @@ export default function AboutPage() {
       {/* Project Section Start */}
       <section className="project-section-2 section-padding fix">
         <div className="left-shape">
-          <img src="/assets/img/project/left-shape.png" alt="shape-img" />
+          <AppImage src="/assets/img/project/left-shape.png" alt="shape-img" width={873} height={395} />
         </div>
         <div className="right-shape">
-          <img src="/assets/img/project/right-shape.png" alt="shape-img" />
+          <AppImage src="/assets/img/project/right-shape.png" alt="shape-img" width={419} height={517} />
         </div>
         <div className="container">
           <div className="section-title-area">
             <div className="section-title">
-              <span className="wow fadeInUp">PROJECTS</span>
+              <span className="wow fadeInUp">OUR JOURNEY</span>
               <h2 className="wow fadeInUp" data-wow-delay=".3s">
-                Our Latest Incredible <br /> Client&apos;s Projects
+                Growing from Uganda to <br /> Tanzania and Beyond
               </h2>
             </div>
             <div className="array-button wow fadeInUp" data-wow-delay=".5s">
@@ -278,18 +279,18 @@ export default function AboutPage() {
             <div className="marquee-inner to-left">
               <ul className="marqee-list d-flex">
                 <li className="marquee-item style-2">
-                  <span className="text-slider"><img src="/assets/img/asterisk.svg" alt="img" /></span><span className="text-slider text-style">Cyber Security</span>
-                  <span className="text-slider"><img src="/assets/img/asterisk.svg" alt="img" /></span><span className="text-slider text-style">IT Solution</span>
-                  <span className="text-slider"><img src="/assets/img/asterisk.svg" alt="img" /></span><span className="text-slider text-style">Technology</span>
-                  <span className="text-slider"><img src="/assets/img/asterisk.svg" alt="img" /></span><span className="text-slider text-style">Data Security</span>
-                  <span className="text-slider"><img src="/assets/img/asterisk.svg" alt="img" /></span><span className="text-slider text-style">Cyber Security</span>
-                  <span className="text-slider"><img src="/assets/img/asterisk.svg" alt="img" /></span><span className="text-slider text-style">IT Solution</span>
-                  <span className="text-slider"><img src="/assets/img/asterisk.svg" alt="img" /></span><span className="text-slider text-style">Technology</span>
-                  <span className="text-slider"><img src="/assets/img/asterisk.svg" alt="img" /></span><span className="text-slider text-style">Data Security</span>
-                  <span className="text-slider"><img src="/assets/img/asterisk.svg" alt="img" /></span><span className="text-slider text-style">Cyber Security</span>
-                  <span className="text-slider"><img src="/assets/img/asterisk.svg" alt="img" /></span><span className="text-slider text-style">IT Solution</span>
-                  <span className="text-slider"><img src="/assets/img/asterisk.svg" alt="img" /></span><span className="text-slider text-style">Technology</span>
-                  <span className="text-slider"><img src="/assets/img/asterisk.svg" alt="img" /></span><span className="text-slider text-style">Data Security</span>
+                  <span className="text-slider"><AppImage src="/assets/img/asterisk.svg" alt="img" width={50} height={54} /></span><span className="text-slider text-style">Food Ingredients</span>
+                  <span className="text-slider"><AppImage src="/assets/img/asterisk.svg" alt="img" width={50} height={54} /></span><span className="text-slider text-style">Fastbakes Brand</span>
+                  <span className="text-slider"><AppImage src="/assets/img/asterisk.svg" alt="img" width={50} height={54} /></span><span className="text-slider text-style">Research & Innovation</span>
+                  <span className="text-slider"><AppImage src="/assets/img/asterisk.svg" alt="img" width={50} height={54} /></span><span className="text-slider text-style">Manufacturing</span>
+                  <span className="text-slider"><AppImage src="/assets/img/asterisk.svg" alt="img" width={50} height={54} /></span><span className="text-slider text-style">Trading</span>
+                  <span className="text-slider"><AppImage src="/assets/img/asterisk.svg" alt="img" width={50} height={54} /></span><span className="text-slider text-style">Uganda HQ</span>
+                  <span className="text-slider"><AppImage src="/assets/img/asterisk.svg" alt="img" width={50} height={54} /></span><span className="text-slider text-style">Tanzania Expansion</span>
+                  <span className="text-slider"><AppImage src="/assets/img/asterisk.svg" alt="img" width={50} height={54} /></span><span className="text-slider text-style">Food Processing Solutions</span>
+                  <span className="text-slider"><AppImage src="/assets/img/asterisk.svg" alt="img" width={50} height={54} /></span><span className="text-slider text-style">Sustainability</span>
+                  <span className="text-slider"><AppImage src="/assets/img/asterisk.svg" alt="img" width={50} height={54} /></span><span className="text-slider text-style">Client Partnership</span>
+                  <span className="text-slider"><AppImage src="/assets/img/asterisk.svg" alt="img" width={50} height={54} /></span><span className="text-slider text-style">Industry Leadership</span>
+                  <span className="text-slider"><AppImage src="/assets/img/asterisk.svg" alt="img" width={50} height={54} /></span><span className="text-slider text-style">Core Values</span>
                 </li>
               </ul>
             </div>
@@ -315,7 +316,7 @@ export default function AboutPage() {
             <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
               <div className="single-team-items">
                 <div className="team-image">
-                  <img src="/assets/img/team/04.jpg" alt="team-img" />
+                  <AppImage src="/assets/img/team/04.jpg" alt="team-img" width={270} height={280} />
                   <div className="social-profile">
                     <ul>
                       <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
@@ -329,14 +330,14 @@ export default function AboutPage() {
                   <h3>
                     <Link href="/team-details">Marvin McKinney</Link>
                   </h3>
-                  <p>Web Designer</p>
+                  <p>Operations Lead</p>
                 </div>
               </div>
             </div>
             <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".5s">
               <div className="single-team-items">
                 <div className="team-image">
-                  <img src="/assets/img/team/05.jpg" alt="team-img" />
+                  <AppImage src="/assets/img/team/05.jpg" alt="team-img" width={270} height={308} />
                   <div className="social-profile">
                     <ul>
                       <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
@@ -350,14 +351,14 @@ export default function AboutPage() {
                   <h3>
                     <Link href="/team-details">Marvin McKinney</Link>
                   </h3>
-                  <p>Web Designer</p>
+                  <p>Quality Manager</p>
                 </div>
               </div>
             </div>
             <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".7s">
               <div className="single-team-items">
                 <div className="team-image">
-                  <img src="/assets/img/team/06.jpg" alt="team-img" />
+                  <AppImage src="/assets/img/team/06.jpg" alt="team-img" width={270} height={280} />
                   <div className="social-profile">
                     <ul>
                       <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
@@ -371,14 +372,14 @@ export default function AboutPage() {
                   <h3>
                     <Link href="/team-details">Marvin McKinney</Link>
                   </h3>
-                  <p>Web Designer</p>
+                  <p>Supply Chain Coordinator</p>
                 </div>
               </div>
             </div>
             <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".9s">
               <div className="single-team-items">
                 <div className="team-image">
-                  <img src="/assets/img/team/07.jpg" alt="team-img" />
+                  <AppImage src="/assets/img/team/07.jpg" alt="team-img" width={270} height={280} />
                   <div className="social-profile">
                     <ul>
                       <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
@@ -392,7 +393,7 @@ export default function AboutPage() {
                   <h3>
                     <Link href="/team-details">Marvin McKinney</Link>
                   </h3>
-                  <p>Web Designer</p>
+                  <p>Regional Sales Executive</p>
                 </div>
               </div>
             </div>
@@ -403,7 +404,7 @@ export default function AboutPage() {
       <div className="brand-section fix section-padding pt-0">
         <div className="container">
           <div className="brand-wrapper">
-            <h6 className="text-center wow fadeInUp" data-wow-delay=".3s">1k + Brands Trust Us</h6>
+            <h6 className="text-center wow fadeInUp" data-wow-delay=".3s">Trusted by food processors and bakeries across East Africa</h6>
             <BrandSlider />
           </div>
         </div>

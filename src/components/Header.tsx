@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useAuth } from '@/context/AuthContext'; // Import useAuth hook
+import AppImage from './AppImage';
 import Navbar from './Navbar';
 import Image from 'next/image';
 import Offcanvas from './OffCanvas';
@@ -12,13 +12,9 @@ type HeaderProps = {
 };
 
 const Header = ({ scroll }: HeaderProps) => {
-  const { user, role, loading, signOut } = useAuth();
 
   const [isOffCanvas, setOffCanvas] = useState(false);
   const handleOffCanvas = () => setOffCanvas(!isOffCanvas);
-
-  // const [isSearch, setSearch] = useState(false);
-  // const handleSearch = () => setSearch(!isSearch);
 
   return (
     <>
@@ -30,41 +26,20 @@ const Header = ({ scroll }: HeaderProps) => {
               <ul className="contact-list">
                 <li>
                   <i className="far fa-envelope" />
-                  <Link href="/mailto:info@example.com" className="link">info@example.com</Link>
+                  <Link href={`mailto:${process.env.NEXT_PUBLIC_EMAIL_TO}`} className="link">{process.env.NEXT_PUBLIC_EMAIL_TO ?? 'info@example.com'}</Link>
                 </li>
                 <li>
                   <i className="fa-solid fa-phone-volume" />
-                  <Link href="/tel:2086660112">+208-666-0112</Link>
+                  <Link href={`tel:${process.env.NEXT_PUBLIC_PHONE_NUMBER ?? '+0000000000'}`} className="link">{process.env.NEXT_PUBLIC_PHONE_NUMBER ?? '+0000000000'}</Link>
                 </li>
               </ul>
               <div className="top-right">
-                <div className="flag-wrap">
-                  <div className="flag">
-                    <img src="/assets/img/flag.png" alt="flag" />
-                  </div>
-                  <div className="nice-select" tabIndex={0}>
-                    <span className="current">
-                      English
-                    </span>
-                    <ul className="list">
-                      <li data-value={1} className="option selected focus">
-                        English
-                      </li>
-                      <li data-value={1} className="option">
-                        Bangla
-                      </li>
-                      <li data-value={1} className="option">
-                        Hindi
-                      </li>
-                    </ul>
-                  </div>
-                </div>
                 <div className="social-icon d-flex align-items-center">
                   <span>Follow Us:</span>
-                  <Link href="#"><i className="fab fa-facebook-f" /></Link>
-                  <Link href="#"><i className="fab fa-twitter" /></Link>
-                  <Link href="#"><i className="fa-brands fa-linkedin-in" /></Link>
-                  <Link href="#"><i className="fa-brands fa-youtube" /></Link>
+                  <Link href="#" target='_blank'><i className="fab fa-facebook-f" /></Link>
+                  <Link href="#" target='_blank'><i className="fab fa-twitter" /></Link>
+                  <Link href="https://www.tiktok.com/@fastbakes7" target='_blank'><i className="fab fa-tiktok" /></Link>
+                  <Link href="#" target='_blank'><i className="fab fa-youtube" /></Link>
                 </div>
               </div>
             </div>
@@ -72,7 +47,7 @@ const Header = ({ scroll }: HeaderProps) => {
         </div>
         <div id="header-sticky" className={`header-3 ${scroll ? "sticky" : ""}`}>
           <div className="plane-shape">
-            <img src="/assets/img/plane.png" alt="shape-img" />
+            <AppImage src="/assets/img/plane.png" alt="shape-img" width={115} height={71} />
           </div>
           <div className="container">
             <div className="mega-menu-wrapper">
@@ -81,7 +56,7 @@ const Header = ({ scroll }: HeaderProps) => {
                   <div className="logo">
                     <Link href="/" className="header-logo d-flex align-items-center">
                       <Image src="/assets/img/logo/Logo.svg" alt="logo-img" width={40} height={40} />
-                      <h2 className='ms-2 d-inline fw-bolder'>NB <span className='fw-light'>Enterprises</span></h2>
+                      <h3 className='ms-2 d-inline fw-bolder'>NB <span className='fw-light'>Enterprises</span></h3>
                     </Link>
                   </div>
                 </div>
@@ -93,11 +68,10 @@ const Header = ({ scroll }: HeaderProps) => {
                       </nav>
                     </div>
                   </div>
-                  {/* <a onClick={handleSearch} className="search-trigger search-icon"><i className="fal fa-search" /></a> */}
                   <div className="header-button">
                     <Link href="/contact" className="theme-btn bg-white">
                       <span>
-                        get A Quote
+                        Get In Touch
                         <i className="fa-solid fa-arrow-right-long" />
                       </span>
                     </Link>

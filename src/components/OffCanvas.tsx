@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import MobileMenu from "./MobileMenu"
+import AppImage from "./AppImage";
 
 type OffcanvasProps = {
     isOffCanvas: boolean;
@@ -21,7 +22,7 @@ export default function Offcanvas({
                             <div className="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                                 <div className="offcanvas__logo">
                                     <Link href="/">
-                                        <img src="/assets/img/logo/black-logo.svg" alt="logo-img" />
+                                        <AppImage src="/assets/img/logo/black-logo.svg" alt="logo-img" width={198} height={38} />
                                     </Link>
                                 </div>
                                 <div className="offcanvas__close" onClick={handleOffCanvas}>

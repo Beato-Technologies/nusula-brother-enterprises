@@ -3,6 +3,8 @@
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
 
+import AppImage from "./AppImage";
+
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
     speed: 1500,
@@ -38,10 +40,10 @@ export default function Testimonials() {
     return (
         <section className="tesimonial-section-3 section-padding section-bg-2 bg-cover">
             <div className="line-shape">
-                <img src="/assets/img/team/line-shape.png" alt="shape-img" />
+                <AppImage src="/assets/img/team/line-shape.png" alt="shape-img" width={465} height={605} />
             </div>
             <div className="mask-shape">
-                <img src="/assets/img/team/mask-shape.png" alt="shape-img" />
+                <AppImage src="/assets/img/team/mask-shape.png" alt="shape-img" width={343} height={610} />
             </div>
             <div className="array-button">
                 <button className="array-prev"><i className="fal fa-arrow-left" /></button>
@@ -51,7 +53,7 @@ export default function Testimonials() {
                 <div className="section-title text-center">
                     <span className="text-white">Testimonials</span>
                     <h2 className="text-white">
-                        People Who Already Love Us
+                        Trusted Voices From Our Clients
                     </h2>
                 </div>
                 <div className="swiper testimonial-slider-2">
@@ -59,13 +61,13 @@ export default function Testimonials() {
                         <SwiperSlide>
                             <div className="testimonial-box-items">
                                 <div className="icon">
-                                    <img src="/assets/img/testimonial/icon.png" alt="icon-img" />
+                                    <AppImage src="/assets/img/testimonial/icon.png" alt="icon-img" width={50} height={37} />
                                 </div>
                                 <div className="client-items">
                                     <div className="client-image style-2 bg-cover" style={{ backgroundImage: 'url("assets/img/testimonial/02.jpg")' }} />
                                     <div className="client-content">
                                         <h4>Kathryn Murphy</h4>
-                                        <p>Web Designer</p>
+                                        <p>Bakery Operations Lead</p>
                                         <div className="star">
                                             <i className="fas fa-star" />
                                             <i className="fas fa-star" />
@@ -76,20 +78,20 @@ export default function Testimonials() {
                                     </div>
                                 </div>
                                 <p>
-                                    Consectetur adipiscing elit. Integer nunc viverra laoreet est the is porta pretium metus aliquam eget maecenas porta is nunc viverra Aenean pulvinar maximus leo ”
+                                    Nusula and Brother Enterprises has helped us maintain consistent product quality and supply. Their Fastbakes ingredients have improved our production reliability and customer satisfaction.
                                 </p>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="testimonial-box-items">
                                 <div className="icon">
-                                    <img src="/assets/img/testimonial/icon.png" alt="icon-img" />
+                                    <AppImage src="/assets/img/testimonial/icon.png" alt="icon-img" width={50} height={37} />
                                 </div>
                                 <div className="client-items">
                                     <div className="client-image style-2 bg-cover" style={{ backgroundImage: 'url("assets/img/testimonial/03.jpg")' }} />
                                     <div className="client-content">
                                         <h4>Albert Flores</h4>
-                                        <p>Medical Assistant</p>
+                                        <p>Food Processing Manager</p>
                                         <div className="star">
                                             <i className="fas fa-star" />
                                             <i className="fas fa-star" />
@@ -100,20 +102,20 @@ export default function Testimonials() {
                                     </div>
                                 </div>
                                 <p>
-                                    Consectetur adipiscing elit. Integer nunc viverra laoreet est the is porta pretium metus aliquam eget maecenas porta is nunc viverra Aenean pulvinar maximus leo ”
+                                    We value their responsiveness, technical guidance, and product consistency. Nusula is a dependable partner for our day-to-day ingredient requirements.
                                 </p>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="testimonial-box-items">
                                 <div className="icon">
-                                    <img src="/assets/img/testimonial/icon.png" alt="icon-img" />
+                                    <AppImage src="/assets/img/testimonial/icon.png" alt="icon-img" width={50} height={37} />
                                 </div>
                                 <div className="client-items">
                                     <div className="client-image style-2 bg-cover" style={{ backgroundImage: 'url("assets/img/testimonial/02.jpg")' }} />
                                     <div className="client-content">
                                         <h4>Kathryn Murphy</h4>
-                                        <p>Web Designer</p>
+                                        <p>Bakery Operations Lead</p>
                                         <div className="star">
                                             <i className="fas fa-star" />
                                             <i className="fas fa-star" />
@@ -124,20 +126,20 @@ export default function Testimonials() {
                                     </div>
                                 </div>
                                 <p>
-                                    Consectetur adipiscing elit. Integer nunc viverra laoreet est the is porta pretium metus aliquam eget maecenas porta is nunc viverra Aenean pulvinar maximus leo ”
+                                    Nusula and Brother Enterprises has helped us maintain consistent product quality and supply. Their Fastbakes ingredients have improved our production reliability and customer satisfaction.
                                 </p>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="testimonial-box-items">
                                 <div className="icon">
-                                    <img src="/assets/img/testimonial/icon.png" alt="icon-img" />
+                                    <AppImage src="/assets/img/testimonial/icon.png" alt="icon-img" width={50} height={37} />
                                 </div>
                                 <div className="client-items">
                                     <div className="client-image style-2 bg-cover" style={{ backgroundImage: 'url("assets/img/testimonial/03.jpg")' }} />
                                     <div className="client-content">
                                         <h4>Albert Flores</h4>
-                                        <p>Medical Assistant</p>
+                                        <p>Food Processing Manager</p>
                                         <div className="star">
                                             <i className="fas fa-star" />
                                             <i className="fas fa-star" />
@@ -148,7 +150,7 @@ export default function Testimonials() {
                                     </div>
                                 </div>
                                 <p>
-                                    Consectetur adipiscing elit. Integer nunc viverra laoreet est the is porta pretium metus aliquam eget maecenas porta is nunc viverra Aenean pulvinar maximus leo ”
+                                    We value their responsiveness, technical guidance, and product consistency. Nusula is a dependable partner for our day-to-day ingredient requirements.
                                 </p>
                             </div>
                         </SwiperSlide>

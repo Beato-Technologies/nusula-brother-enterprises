@@ -1,6 +1,7 @@
 
 import Link from 'next/link';
 import CounterUp from './CounterUp';
+import AppImage from "./AppImage";
 
 export default function About() {
     return (
@@ -11,41 +12,38 @@ export default function About() {
                         <div className="col-lg-6 wow fadeInUp" data-wow-delay=".4s">
                             <div className="about-image">
                                 <div className="shape-image">
-                                    <img src="/assets/img/about/shape.png" alt="shape-img" />
+                                    <AppImage src="/assets/img/about/shape.png" alt="shape-img" width={351} height={339} />
                                 </div>
                                 <div className="circle-shape">
-                                    <img src="/assets/img/about/circle.png" alt="shape-img" />
+                                    <AppImage src="/assets/img/about/circle.png" alt="shape-img" width={138} height={138} />
                                 </div>
-                                <img src="/assets/img/about/05.png" alt="about-img" />
-                                {/* <div className="video-box">
-                                    <VideoPopup style={1} />
-                                </div> */}
+                                <AppImage src="/assets/img/about/Pan2.webp" alt="about-img" width={609} height={561} />
                             </div>
                         </div>
                         <div className="col-lg-6 mt-4 mt-lg-0">
                             <div className="about-content">
                                 <div className="section-title">
-                                    <span className="wow fadeInUp">ABOUT INFOTECK</span>
+                                    <span className="wow fadeInUp">ABOUT NUSULA & BROTHER ENTERPRISES</span>
                                     <h2 className="wow fadeInUp" data-wow-delay=".3s">
-                                        We Can Clients with the <br /> About Solution
+                                        Professional Trading and Manufacturing <br /> of Food Ingredients
                                     </h2>
                                 </div>
                                 <p className="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                                    It is a long established fact that a reader will be distracted the readable <br /> content of a page when looking at layout the point.
+                                    Since 2018, Nusula and Brother Enterprises has grown from a trading business into a manufacturing leader. <br /> Our Fastbakes brand is now trusted across Uganda and East Africa.
                                 </p>
                                 <div className="icon-area wow fadeInUp" data-wow-delay=".7s">
                                     <ul className="list">
                                         <li>
                                             <i className="fa-solid fa-check" />
-                                            Branding and design Identity
+                                            Established in Uganda in 2018
                                         </li>
                                         <li>
                                             <i className="fa-solid fa-check" />
-                                            Web site Marketing Solutions
+                                            Expanded to Tanzania in 2025
                                         </li>
                                         <li>
                                             <i className="fa-solid fa-check" />
-                                            Unlimited Download Data
+                                            Fastbakes brand across East Africa
                                         </li>
                                     </ul>
                                     <div className="icon-items">
@@ -56,9 +54,9 @@ export default function About() {
                                         </div>
                                         <div className="content">
                                             <h2>
-                                                <CounterUp count={556} />+
+                                                <CounterUp count={8} />+
                                             </h2>
-                                            <span>Satisfied Clients</span>
+                                            <span>Years Serving Food Processors</span>
                                         </div>
                                     </div>
                                 </div>
@@ -74,9 +72,9 @@ export default function About() {
                                             <i className="fa-solid fa-phone" />
                                         </div>
                                         <div className="content">
-                                            <span>Call Us Now</span>
+                                            <span>Talk to Our Team</span>
                                             <h5>
-                                                <Link href="/tel:+2085550112">+208-555-0112</Link>
+                                                <Link href="/tel:+256703412545">+256-703-412-545</Link>
                                             </h5>
                                         </div>
                                     </div>

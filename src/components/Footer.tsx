@@ -1,4 +1,6 @@
 import Link from "next/link"
+import AppImage from './AppImage';
+import Image from "next/image"
 
 export default function Footer() {
   return (
@@ -6,10 +8,10 @@ export default function Footer() {
       <footer className="footer-section">
         <div className="footer-widgets-wrapper footer-bg">
           <div className="shape-1">
-            <img src="/assets/img/footer-shape-1.png" alt="shape-img" />
+            <AppImage src="/assets/img/footer-shape-1.png" alt="shape-img" width={361} height={372} />
           </div>
           <div className="shape-2">
-            <img src="/assets/img/footer-shape-2.png" alt="shape-img" />
+            <AppImage src="/assets/img/footer-shape-2.png" alt="shape-img" width={288} height={383} />
           </div>
           <div className="container">
             <div className="row">
@@ -17,14 +19,13 @@ export default function Footer() {
                 <div className="single-footer-widget">
                   <div className="widget-head">
                     <Link href="/">
-                      <img src="/assets/img/logo/white-logo.svg" alt="logo-img" />
+                      <Image src="/assets/img/logo/Logo.svg" alt="logo-img" width={40} height={40} />
+                      <h3 className='ms-2'>NB <span className='fw-light'>Enterprises</span></h3>
                     </Link>
                   </div>
                   <div className="footer-content">
                     <p>
-                      Phasellus ultricies aliquam volutpat
-                      ullamcorper laoreet neque, a lacinia
-                      curabitur lacinia mollis
+                      Your trusted partner in specialized food ingredients. We deliver quality products and reliable support for food processing businesses across East Africa.
                     </p>
                     <div className="social-icon d-flex align-items-center">
                       <Link href="#"><i className="fab fa-facebook-f" /></Link>
@@ -44,11 +45,11 @@ export default function Footer() {
                     <li>
                       <Link href="/about">
                         <i className="fa-solid fa-chevron-right" />
-                        Infotech About
+                        About NB Enterprises
                       </Link>
                     </li>
                     <li>
-                      <Link href="/service">
+                      <Link href="/services">
                         <i className="fa-solid fa-chevron-right" />
                         Our Services
                       </Link>
@@ -82,7 +83,7 @@ export default function Footer() {
                   <div className="recent-post-area">
                     <div className="recent-post-items">
                       <div className="thumb">
-                        <img src="/assets/img/news/pp1.jpg" alt="post-img" />
+                        <AppImage src="/assets/img/news/pp1.jpg" alt="post-img" width={78} height={79} />
                       </div>
                       <div className="content">
                         <ul className="post-date">
@@ -94,14 +95,14 @@ export default function Footer() {
                         <h6>
                           <Link href="/news-details">
                             Top 5 Most Famous <br />
-                            Technology Trend In 2024
+                            Baking Trends In 2026
                           </Link>
                         </h6>
                       </div>
                     </div>
                     <div className="recent-post-items mb-0">
                       <div className="thumb">
-                        <img src="/assets/img/news/pp2.jpg" alt="post-img" />
+                        <AppImage src="/assets/img/news/pp2.jpg" alt="post-img" width={78} height={79} />
                       </div>
                       <div className="content">
                         <ul className="post-date">
@@ -112,8 +113,8 @@ export default function Footer() {
                         </ul>
                         <h6>
                           <Link href="/news-details">
-                            The Surfing Man Will Blow <br />
-                            Your Mind
+                            The Importance Of Cake Gels <br />
+                            In Baking
                           </Link>
                         </h6>
                       </div>
@@ -130,19 +131,19 @@ export default function Footer() {
                     <ul className="contact-info">
                       <li>
                         <i className="fas fa-map-marker-alt" />
-                        6391 Elgin St. Celina, USA
+                        SMS House Industrial Area, Kampala, Uganda
                       </li>
                       <li>
                         <i className="fa-solid fa-phone-volume" />
-                        <Link href="/tel:2086660112">+208-666-0112</Link>
+                        <Link href="tel:+256703412545">+256-703-412-545</Link>
                       </li>
                       <li>
                         <i className="fa-regular fa-envelope" />
-                        <Link href="/mailto:infotech@gmail.com">Infotech@gmail.com</Link>
+                        <Link href="mailto:info@nusulabrotherenterprises.com">info@nusulabrotherenterprises.com</Link>
                       </li>
                     </ul>
                     <Link href="/contact" className="theme-btn hover-white mt-4">
-                      get A Quote
+                      Get In Touch
                       <i className="fa-solid fa-arrow-right-long" />
                     </Link>
                   </div>
@@ -159,12 +160,12 @@ export default function Footer() {
               </p>
               <ul className="footer-menu wow fadeInRight" data-wow-delay=".5s">
                 <li>
-                  <Link href="/contact">
+                  <Link href="/#">
                     Terms &amp; Condition
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact">
+                  <Link href="/#">
                     Privacy Policy
                   </Link>
                 </li>
