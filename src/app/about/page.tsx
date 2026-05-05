@@ -38,11 +38,11 @@ export default function AboutPage() {
                   <div className="section-title">
                     <span className="wow fadeInUp">ABOUT NUSULA & BROTHER ENTERPRISES</span>
                     <h2 className="wow fadeInUp" data-wow-delay=".3s">
-                      Specialized Food Ingredients for <span>East Africa</span>
+                      Strategic Ingredient Solutions for <span>East Africa</span>
                     </h2>
                   </div>
                   <p className="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                    Since 2018, we have grown from a trading company into a leading trading and manufacturing business through research and innovation. <br /> Today, Fastbakes is a prominent brand in Uganda and across East Africa.
+                    Since 2018, we have evolved from a focused trading company into an integrated trading and manufacturing enterprise driven by research and innovation. <br /> Today, Fastbakes is a trusted brand in Uganda and across East Africa.
                   </p>
                   <div className="about-icon-items">
                     <div className="icon-items wow fadeInUp" data-wow-delay=".7s">
@@ -63,7 +63,7 @@ export default function AboutPage() {
                       <div className="content">
                         <h4>Mission</h4>
                         <p>
-                          We strive constantly to supply sustainable solutions that connect food processing industries.
+                          We strive constantly to supply sustainable solutions to the food processing industries, connecting food processing communities across East Africa.
                         </p>
                       </div>
                     </div>
@@ -79,7 +79,7 @@ export default function AboutPage() {
                       <AppImage src="/assets/img/about/author.png" alt="author-img" width={56} height={56} />
                       <div className="content">
                         <h6>Fastbakes Brand</h6>
-                        <p>Trusted in Uganda and East Africa</p>
+                        <p>Uganda &bull; Tanzania &mdash; 45 Employees &bull; Est. 2018</p>
                       </div>
                     </div>
                   </div>

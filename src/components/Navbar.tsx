@@ -13,18 +13,18 @@ export default function Navbar() {
             </li>
             <li>
                 <Link href="/services">
-                    Services
+                    Solutions
                 </Link>
             </li>
             <li className="has-dropdown">
                 <Link href="/news">
-                    Subsidiaries
+                    Regional Operations
                     <i className="fas fa-angle-down ps-1" />
                 </Link>
                 <ul className="submenu">
                     <li className="has-dropdown">
                         <Link href="/subsidiaries/nb-tanzania">
-                            NBE Tanzania
+                            NBE Tanzania Operations
                         </Link>
                     </li>
                 </ul>

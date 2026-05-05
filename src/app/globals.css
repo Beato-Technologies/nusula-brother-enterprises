@@ -11,9 +11,20 @@
 @import '../../public/assets/css/nice-select.css';
 @import '../../public/assets/css/main.css';
 
+:root {
+  --theme: #0b7a46;
+  --theme2: #f2dc4e;
+  --header: #0c2b1f;
+  --bg2: #153f32;
+}
+/*
+#153f32
+*/
 /* Basic reset and body styling */
 body {
   margin: 0;
+  color: #1f2a28;
+  background-color: #f7faf8;
   font-family:
     -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -94,6 +105,10 @@ code {
   margin-top: auto;
 }
 
+.cta-banner-2 .cta-wrapper-2 .author-icon::before {
+  display: none;
+}
+
 /* Logo wordmark: two-row stacked text next to logo image */
 .logo-wordmark {
   display: flex;
@@ -122,6 +137,10 @@ code {
 .header-logo--bold .logo-mark {
   width: clamp(46px, 4vw, 64px);
   height: auto;
+}
+
+.header-3.sticky {
+  box-shadow: 0 10px 30px rgba(7, 29, 19, 0.16);
 }
 
 /* Corporate full-bleed hero treatment inspired by bakhresa.com */
@@ -195,4 +214,14 @@ code {
   .logo-wordmark__bottom {
     font-size: 0.76rem;
   }
+}
+
+/* Auth/admin pages: premium corporate panel style */
+.portal-shell {
+  background: linear-gradient(135deg, #f8fbf9 0%, #edf5f0 100%);
+}
+
+.portal-card {
+  border: 1px solid rgba(12, 43, 31, 0.08);
+  box-shadow: 0 14px 36px rgba(11, 56, 33, 0.12);
 }

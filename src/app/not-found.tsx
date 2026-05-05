@@ -12,11 +12,11 @@ export default function NotFound() {
                                 <Image src="/assets/img/404.png" alt="img" width={500} height={500} />
                             </div>
                             <h2>
-                                Whoops! This Page got Lost <br />
-                                in conversation
+                                This Page Is Currently Unavailable <br />
+                                Or Has Been Moved
                             </h2>
                             <Link href="/" className="theme-btn wow fadeInUp" data-wow-delay=".8s">
-                                Go Back Home
+                                Return To Homepage
                                 <i className="fa-solid fa-arrow-right-long" />
                             </Link>
                         </div>

@@ -51,9 +51,9 @@ export default function Testimonials() {
             </div>
             <div className="container">
                 <div className="section-title text-center">
-                    <span className="text-white">Testimonials</span>
+                    <span className="text-white">Client Endorsements</span>
                     <h2 className="text-white">
-                        Trusted Voices From Our Clients
+                        Trusted By Industrial Food Producers
                     </h2>
                 </div>
                 <div className="swiper testimonial-slider-2">
@@ -66,8 +66,8 @@ export default function Testimonials() {
                                 <div className="client-items">
                                     <div className="client-image style-2 bg-cover" style={{ backgroundImage: 'url("assets/img/testimonial/02.jpg")' }} />
                                     <div className="client-content">
-                                        <h4>Kathryn Murphy</h4>
-                                        <p>Bakery Operations Lead</p>
+                                        <h4>Grace Namara</h4>
+                                        <p>Head of Operations, Kampala Bakehouse</p>
                                         <div className="star">
                                             <i className="fas fa-star" />
                                             <i className="fas fa-star" />
@@ -90,8 +90,8 @@ export default function Testimonials() {
                                 <div className="client-items">
                                     <div className="client-image style-2 bg-cover" style={{ backgroundImage: 'url("assets/img/testimonial/03.jpg")' }} />
                                     <div className="client-content">
-                                        <h4>Albert Flores</h4>
-                                        <p>Food Processing Manager</p>
+                                        <h4>David Mboya</h4>
+                                        <p>Procurement Manager, Dar Fresh Foods</p>
                                         <div className="star">
                                             <i className="fas fa-star" />
                                             <i className="fas fa-star" />
@@ -114,8 +114,8 @@ export default function Testimonials() {
                                 <div className="client-items">
                                     <div className="client-image style-2 bg-cover" style={{ backgroundImage: 'url("assets/img/testimonial/02.jpg")' }} />
                                     <div className="client-content">
-                                        <h4>Kathryn Murphy</h4>
-                                        <p>Bakery Operations Lead</p>
+                                        <h4>Grace Namara</h4>
+                                        <p>Head of Operations, Kampala Bakehouse</p>
                                         <div className="star">
                                             <i className="fas fa-star" />
                                             <i className="fas fa-star" />
@@ -138,8 +138,8 @@ export default function Testimonials() {
                                 <div className="client-items">
                                     <div className="client-image style-2 bg-cover" style={{ backgroundImage: 'url("assets/img/testimonial/03.jpg")' }} />
                                     <div className="client-content">
-                                        <h4>Albert Flores</h4>
-                                        <p>Food Processing Manager</p>
+                                        <h4>David Mboya</h4>
+                                        <p>Procurement Manager, Dar Fresh Foods</p>
                                         <div className="star">
                                             <i className="fas fa-star" />
                                             <i className="fas fa-star" />

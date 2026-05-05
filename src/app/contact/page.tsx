@@ -20,7 +20,7 @@ const ContactPage = () => {
                       <div className="content">
                         <p>Call Us 7/24</p>
                         <h3>
-                          <Link href="tel:+256703412545">+256-703-412-545</Link>
+                          <Link href="tel:+255796317866">+255 796 317 866</Link>
                         </h3>
                       </div>
                     </div>
@@ -33,9 +33,9 @@ const ContactPage = () => {
                         </svg>
                       </div>
                       <div className="content">
-                        <p>Make a Quote</p>
+                        <p>Email Us</p>
                         <h3>
-                          <Link href="mailto:info@nusulabros.com">info@nusulabros.com</Link>
+                          <Link href="mailto:info@nusulabrotherenterprises.com">info@nusulabrotherenterprises.com</Link>
                         </h3>
                       </div>
                     </div>
@@ -58,9 +58,9 @@ const ContactPage = () => {
               </div>
               <div className="col-lg-6">
                 <div className="contact-content">
-                  <h2>Interested in Our Products?</h2>
+                  <h2>Discuss Your Ingredient Requirements</h2>
                   <p>
-                    Get in touch with Nusula and Brother Enterprises to discuss your food ingredient needs. We are committed to quality products, reliable supply, and strong client support.
+                    Connect with our commercial team for product guidance, pricing, and dependable supply planning tailored to your production targets.
                   </p>
                   <form action="contact.php" id="contact-form" method="POST" className="contact-form-items">
                     <div className="row g-4">

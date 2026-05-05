@@ -39,9 +39,10 @@ export default function RegisterPage() {
   };
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center p-24">
-      <h1 className="text-2xl font-bold mb-4">Register</h1>
-      <form onSubmit={handleSubmit} className="w-full max-w-md bg-white p-8 rounded-lg shadow-md">
+    <div className="portal-shell flex min-h-screen flex-col items-center justify-center p-24">
+      <h1 className="text-2xl font-bold mb-2">Create Client Portal Account</h1>
+      <p className="mb-4 text-muted">Register to manage requests and updates</p>
+      <form onSubmit={handleSubmit} className="portal-card w-full max-w-md bg-white p-8 rounded-lg shadow-md">
         {error && <p className="text-red-500 mb-4">{error}</p>}
         {message && <p className="text-green-500 mb-4">{message}</p>}
         <div className="mb-4">
@@ -73,7 +74,8 @@ export default function RegisterPage() {
         <div className="flex items-center justify-between">
           <button
             type="submit"
-            className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            style={{ backgroundColor: '#0b7a46' }}
           >
             Register
           </button>

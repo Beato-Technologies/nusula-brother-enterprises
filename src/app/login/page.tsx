@@ -35,9 +35,10 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center p-24">
-      <h1 className="text-2xl font-bold mb-4">Login</h1>
-      <form onSubmit={handleSubmit} className="w-full max-w-md bg-white p-8 rounded-lg shadow-md">
+    <div className="portal-shell flex min-h-screen flex-col items-center justify-center p-24">
+      <h1 className="text-2xl font-bold mb-2">Client Portal Login</h1>
+      <p className="mb-4 text-muted">Secure access to your Nusula account</p>
+      <form onSubmit={handleSubmit} className="portal-card w-full max-w-md bg-white p-8 rounded-lg shadow-md">
         {error && <p className="text-red-500 mb-4">{error}</p>}
         <div className="mb-4">
           <label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2">
@@ -68,7 +69,8 @@ export default function LoginPage() {
         <div className="flex items-center justify-between">
           <button
             type="submit"
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            style={{ backgroundColor: '#0b7a46' }}
           >
             Sign In
           </button>

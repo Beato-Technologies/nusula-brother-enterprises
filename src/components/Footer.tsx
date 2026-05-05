@@ -19,8 +19,8 @@ export default function Footer() {
                 <div className="single-footer-widget">
                   <div className="widget-head">
                     <Link href="/" className='header-logo d-flex align-items-center gap-2'>
-                      <Image src="/assets/img/logo/Logo.png" alt="logo-img" width={40} height={40} />
-                      <div className="logo-wordmark text-white">
+                      <Image src="/assets/img/logo/Logo.png" alt="logo-img" width={56} height={56} className='logo-mark' />
+                      <div className="logo-wordmark text-white text-uppercase">
                         <span className="logo-wordmark__top">Nusula Brother</span>
                         <span className="logo-wordmark__bottom">Enterprises</span>
                       </div>
@@ -28,13 +28,12 @@ export default function Footer() {
                   </div>
                   <div className="footer-content">
                     <p>
-                      Your trusted partner in specialized food ingredients. We deliver quality products and reliable support for food processing businesses across East Africa.
+                      A trusted regional partner for specialized food ingredients, manufacturing excellence, and dependable commercial support across East Africa.
                     </p>
                     <div className="social-icon d-flex align-items-center">
-                      <Link href="#"><i className="fab fa-facebook-f" /></Link>
-                      <Link href="#"><i className="fab fa-twitter" /></Link>
-                      <Link href="#"><i className="fa-brands fa-linkedin-in" /></Link>
-                      <Link href="#"><i className="fa-brands fa-youtube" /></Link>
+                      <Link href="https://www.facebook.com/Fastbakes" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f" /></Link>
+                      <Link href="https://www.instagram.com/fastbakes_official" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram" /></Link>
+                      <Link href="https://www.tiktok.com/@fastbakestz" target="_blank" rel="noopener noreferrer"><i className="fab fa-tiktok" /></Link>
                     </div>
                   </div>
                 </div>
@@ -54,19 +53,19 @@ export default function Footer() {
                     <li>
                       <Link href="/services">
                         <i className="fa-solid fa-chevron-right" />
-                        Our Services
+                        Our Solutions
                       </Link>
                     </li>
                     <li>
-                      <Link href="/news">
+                      <Link href="/team">
                         <i className="fa-solid fa-chevron-right" />
-                        Our Blogs
+                        Leadership Team
                       </Link>
                     </li>
                     <li>
-                      <Link href="/faq">
+                      <Link href="/contact">
                         <i className="fa-solid fa-chevron-right" />
-                        FAQ’S
+                        Request Quote
                       </Link>
                     </li>
                     <li>
@@ -134,11 +133,11 @@ export default function Footer() {
                     <ul className="contact-info">
                       <li>
                         <i className="fas fa-map-marker-alt" />
-                        SMS House Industrial Area, Kampala, Uganda
+                        Plot 16, Chango&apos;mbe Area, Dar es Salaam, Tanzania
                       </li>
                       <li>
                         <i className="fa-solid fa-phone-volume" />
-                        <Link href="tel:+256703412545">+256-703-412-545</Link>
+                        <Link href="tel:+255796317866">+255 796 317 866</Link>
                       </li>
                       <li>
                         <i className="fa-regular fa-envelope" />

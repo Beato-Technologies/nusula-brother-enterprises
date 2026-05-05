@@ -13,13 +13,13 @@ export default function Team() {
             <div className="container">
                 <div className="section-title-area">
                     <div className="section-title">
-                        <span className="wow fadeInUp">Team Members</span>
+                        <span className="wow fadeInUp">Leadership</span>
                         <h2 className="wow fadeInUp" data-wow-delay=".3s">
-                            Our Dedicated Team <br /> Members
+                            Executive Leadership <br /> Team
                         </h2>
                     </div>
                     <Link href="/team" className="theme-btn wow fadeInUp" data-wow-delay=".5s">
-                        All Member
+                        View Leadership
                         <i className="fa-solid fa-arrow-right-long" />
                     </Link>
                 </div>
@@ -83,7 +83,7 @@ export default function Team() {
                                 <h3>
                                     <Link href="/team-details">Kabwanga Ismail Tijjani, PhD</Link>
                                 </h3>
-                                <p>Director Quality Control & H/R</p>
+                                <p>Director, Quality Control & Human Resources</p>
                             </div>
                         </div>
                     </div>

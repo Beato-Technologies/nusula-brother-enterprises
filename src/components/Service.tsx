@@ -9,11 +9,11 @@ export default function Service() {
                     <div className="section-title">
                         <span>Our Specializations</span>
                         <h2>
-                            Premium Cake Ingredients <br /> For East Africa
+                            Premium Ingredient Solutions <br /> For East Africa
                         </h2>
                     </div>
                     <Link href="/services" className="theme-btn">
-                        Explore All Services
+                        Explore All Solutions
                         <i className="fa-solid fa-arrow-right-long" />
                     </Link>
                 </div>
@@ -31,12 +31,12 @@ export default function Service() {
                                     <AppImage src="/assets/img/service/icon/s-icon-1.svg" alt="img" width={40} height={40} />
                                 </div>
                                 <h4>
-                                    <Link href="/service-details">Food Ingredient Trading</Link>
+                                    <Link href="/services">Manufactured Ingredients</Link>
                                 </h4>
                                 <p>
-                                    Supply of specialized food ingredients across East Africa with dependable sourcing and delivery.
+                                    Cake Gel, Baker&apos;s Fat, Icing Sugar, Pan Grease, White Table Vinegar and CR Products (CR600 &amp; CR630) — made under strict UNBS &amp; TBS standards.
                                 </p>
-                                <Link href="/service-details" className="theme-btn-2 mt-3">
+                                <Link href="/services" className="theme-btn-2 mt-3">
                                     Learn More
                                     <i className="fa-solid fa-arrow-right-long" />
                                 </Link>
@@ -56,12 +56,12 @@ export default function Service() {
                                     <AppImage src="/assets/img/service/icon/s-icon-2.svg" alt="img" width={40} height={40} />
                                 </div>
                                 <h4>
-                                    <Link href="/service-details">Food Manufacturing</Link>
+                                    <Link href="/services">Cake Premixes</Link>
                                 </h4>
                                 <p>
-                                    Large-scale production under the Fastbakes brand with consistent quality and safety controls.
+                                    A full range of Fastbakes premixes — American Oil Muffin, Spongy Cake, Red Velvet, Cup Cake, Smoothie Cake, Magdalenas, and more.
                                 </p>
-                                <Link href="/service-details" className="theme-btn-2 mt-3">
+                                <Link href="/services" className="theme-btn-2 mt-3">
                                     Learn More
                                     <i className="fa-solid fa-arrow-right-long" />
                                 </Link>
@@ -81,12 +81,12 @@ export default function Service() {
                                     <AppImage src="/assets/img/service/icon/s-icon-5.svg" alt="img" width={40} height={40} />
                                 </div>
                                 <h4>
-                                    <Link href="/service-details">Research & Innovation</Link>
+                                    <Link href="/services">Traded Specialty Ingredients</Link>
                                 </h4>
                                 <p>
-                                    Continuous research to develop practical ingredient solutions for modern food processing.
+                                    Caramel, Potassium &amp; Calcium Sorbate, Desiccated Coconut, Corn Starch, Gelatin, Xanthan Gum, Food Flavors, and more — reliably sourced.
                                 </p>
-                                <Link href="/service-details" className="theme-btn-2 mt-3">
+                                <Link href="/services" className="theme-btn-2 mt-3">
                                     Learn More
                                     <i className="fa-solid fa-arrow-right-long" />
                                 </Link>
@@ -106,12 +106,12 @@ export default function Service() {
                                     <AppImage src="/assets/img/service/icon/s-icon-3.svg" alt="img" width={40} height={40} />
                                 </div>
                                 <h4>
-                                    <Link href="/service-details">Regional Distribution</Link>
+                                    <Link href="/services">Regional Distribution</Link>
                                 </h4>
                                 <p>
-                                    Efficient distribution networks across Uganda and East Africa to keep your operations running.
+                                    Serving Uganda and Tanzania with efficient delivery networks — supporting bakeries, processors, and food manufacturers across East Africa.
                                 </p>
-                                <Link href="/service-details" className="theme-btn-2 mt-3">
+                                <Link href="/services" className="theme-btn-2 mt-3">
                                     Learn More
                                     <i className="fa-solid fa-arrow-right-long" />
                                 </Link>
@@ -135,10 +135,10 @@ export default function Service() {
                             </div>
                         </div>
                         <h3>
-                            Partner With Us For <br /> Quality Food Ingredients
+                            Partner With Us For <br /> Reliable Ingredient Performance
                         </h3>
                         <Link href="/contact" className="theme-btn bg-white">
-                            Request Quotation
+                            Request A Commercial Quote
                             <i className="fa-solid fa-arrow-right-long" />
                         </Link>
                     </div>
