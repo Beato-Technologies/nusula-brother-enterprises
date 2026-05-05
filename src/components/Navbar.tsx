@@ -13,21 +13,21 @@ export default function Navbar() {
             </li>
             <li>
                 <Link href="/services">
-                    Solutions
+                    Products
                 </Link>
             </li>
             <li>
                 <Link href="/team">Our Team</Link>
             </li>
             <li className="has-dropdown">
-                <Link href="/news">
-                    Regional Operations
+                <Link href="/#">
+                    Subsidiaries
                     <i className="fas fa-angle-down ps-1" />
                 </Link>
                 <ul className="submenu">
                     <li className="has-dropdown">
-                        <Link href="/subsidiaries/nb-tanzania">
-                            NBE Tanzania Operations
+                        <Link href="/subsidiaries/tanzania">
+                            Tanzania
                         </Link>
                     </li>
                 </ul>

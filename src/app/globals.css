@@ -216,6 +216,43 @@ code {
   }
 }
 
+/* 404 page: creative typographic display */
+.nbe-404-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25em;
+  margin-bottom: 2rem;
+  line-height: 1;
+}
+
+.nbe-404-digit {
+  font-size: clamp(6rem, 16vw, 12rem);
+  font-weight: 900;
+  color: var(--theme);
+  letter-spacing: -0.02em;
+  text-shadow: 0 4px 24px rgba(11, 122, 70, 0.18);
+}
+
+.nbe-404-icon {
+  font-size: clamp(4rem, 10vw, 8rem);
+  color: var(--theme2);
+  display: flex;
+  align-items: center;
+  filter: drop-shadow(0 4px 12px rgba(242, 220, 78, 0.35));
+  animation: nbe-sway 3s ease-in-out infinite;
+}
+
+@keyframes nbe-sway {
+  0%,
+  100% {
+    transform: rotate(-6deg);
+  }
+  50% {
+    transform: rotate(6deg);
+  }
+}
+
 /* Team page: equal-height cards */
 .team-section-4 .row > [class*='col-'] {
   display: flex;

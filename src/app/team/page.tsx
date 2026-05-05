@@ -18,7 +18,7 @@ const ugandaOperations: TeamMember[] = [
   { name: 'Mirembe Mida', role: 'General Manager - Factory', image: '/assets/img/team/generic.jpg' },
   { name: 'Walujjo Yusufu', role: 'Production Manager', image: '/assets/img/team/generic.jpg' },
   { name: 'Wanyenze Mariam', role: 'Sales Manager', image: '/assets/img/team/Wanyenze.jpeg' },
-  { name: 'Muyonjo Adam', role: 'Sales Executive', image: '/assets/img/team/Adam.jpeg' },
+  { name: 'Muyonjo Adam', role: 'Sales Executive', image: '/assets/img/team/Adam.png' },
   { name: 'Nabosa Mariam', role: 'Sales Executive', image: '/assets/img/team/generic.jpg' },
   { name: 'Ochweda Musa Abdallah', role: 'Head of Transport / Logistics', image: '/assets/img/team/generic.jpg' },
   { name: 'Ahumuza Afiswa', role: 'Accounts Manager', image: '/assets/img/team/Afiswa.jpeg' },
