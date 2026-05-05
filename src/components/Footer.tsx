@@ -59,7 +59,7 @@ export default function Footer() {
                     <li>
                       <Link href="/team">
                         <i className="fa-solid fa-chevron-right" />
-                        Leadership Team
+                        Our Team
                       </Link>
                     </li>
                     <li>

@@ -216,6 +216,24 @@ code {
   }
 }
 
+/* Team page: equal-height cards */
+.team-section-4 .row > [class*='col-'] {
+  display: flex;
+}
+
+.team-section-4 .team-card-items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.team-section-4 .team-card-items .team-content {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /* Auth/admin pages: premium corporate panel style */
 .portal-shell {
   background: linear-gradient(135deg, #f8fbf9 0%, #edf5f0 100%);

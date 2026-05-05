@@ -1,73 +1,93 @@
 import React from 'react';
 import AppImage from '../../components/AppImage';
+import Link from 'next/link';
 
-const TeamPage = () => {
+type TeamMember = {
+  name: string;
+  role: string;
+  image: string;
+};
+
+const executiveLeadership: TeamMember[] = [
+  { name: 'Hajjati Nemwa Nusula Njogi', role: 'Chief Executive Officer', image: '/assets/img/team/Nusula.webp' },
+  { name: 'Mr. Lujja Nasur Wawire', role: 'Executive Director (General Manager)', image: '/assets/img/team/Lujja.webp' },
+  { name: 'Dr. Ismail Tijjani Kabwanga, PhD', role: 'Director, Quality Control & Human Resources', image: '/assets/img/team/Ismail.webp' },
+];
+
+const ugandaOperations: TeamMember[] = [
+  { name: 'Mirembe Mida', role: 'General Manager - Factory', image: '/assets/img/team/generic.jpg' },
+  { name: 'Walujjo Yusufu', role: 'Production Manager', image: '/assets/img/team/generic.jpg' },
+  { name: 'Wanyenze Mariam', role: 'Sales Manager', image: '/assets/img/team/Wanyenze.jpeg' },
+  { name: 'Muyonjo Adam', role: 'Sales Executive', image: '/assets/img/team/Adam.jpeg' },
+  { name: 'Nabosa Mariam', role: 'Sales Executive', image: '/assets/img/team/generic.jpg' },
+  { name: 'Ochweda Musa Abdallah', role: 'Head of Transport / Logistics', image: '/assets/img/team/generic.jpg' },
+  { name: 'Ahumuza Afiswa', role: 'Accounts Manager', image: '/assets/img/team/Afiswa.jpeg' },
+];
+
+const tanzaniaTeam: TeamMember[] = [
+  { name: 'Lilian Reuben', role: 'Country General Manager', image: '/assets/img/team/generic.jpg' },
+  { name: 'Patrick Fidelis', role: 'Production / QC Manager', image: '/assets/img/team/Mabala.jpeg' },
+  { name: 'Jenifer Mushi', role: 'Sales Executive', image: '/assets/img/team/Mushi.jpeg' },
+  { name: 'Hellena Felix Muyenga', role: 'Sales Executive', image: '/assets/img/team/Helena.jpeg' },
+];
+
+function TeamGrid({ title, members }: { title: string; members: TeamMember[] }) {
   return (
-    <div className="portal-shell container mx-auto p-8">
-      <h1 className="text-3xl font-bold mb-4">Leadership &amp; Functional Teams</h1>
-      <p className="text-lg mb-8">
-        Meet the leadership and specialist teams driving Nusula and Brothers Enterprises forward through operational discipline,
-        product quality, and long-term client partnerships across Uganda and Tanzania.
-      </p>
-
-      {/* Executive Leadership */}
-      <h2 className="text-2xl font-semibold mb-4">Executive Leadership</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-        <div className="portal-card bg-white p-6 rounded-lg shadow-md text-center">
-          <AppImage src="/assets/img/team/Nusula.webp" alt="Hajjati Nemwa Nusula Njogi" width={96} height={96} className="w-24 h-24 rounded-full mx-auto mb-4 object-cover" />
-          <h3 className="text-xl font-semibold">Hajjati Nemwa Nusula Njogi</h3>
-          <p className="text-gray-600 font-medium">Chief Executive Officer</p>
-        </div>
-        <div className="portal-card bg-white p-6 rounded-lg shadow-md text-center">
-          <AppImage src="/assets/img/team/Lujja.webp" alt="Mr. Lujja Nasur Wawire" width={96} height={96} className="w-24 h-24 rounded-full mx-auto mb-4 object-cover" />
-          <h3 className="text-xl font-semibold">Mr. Lujja Nasur Wawire</h3>
-          <p className="text-gray-600 font-medium">Executive Director (General Manager)</p>
-        </div>
-        <div className="portal-card bg-white p-6 rounded-lg shadow-md text-center">
-          <AppImage src="/assets/img/team/Ismail.webp" alt="Dr. Ismail Tijjani Kabwanga" width={96} height={96} className="w-24 h-24 rounded-full mx-auto mb-4 object-cover" />
-          <h3 className="text-xl font-semibold">Dr. Ismail Tijjani Kabwanga, PhD</h3>
-          <p className="text-gray-600 font-medium">Director, Quality Control &amp; Human Resources</p>
-        </div>
+    <div className="mt-5">
+      <div className="section-title mb-0">
+        <h3 className='text-2xl pt-5 fw-bold'>{title}</h3>
       </div>
-
-      {/* Uganda Operations */}
-      <h2 className="text-2xl font-semibold mb-4">Uganda Operations Team</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
-        {[
-          { name: 'Mirembe Mida', role: 'General Manager — Factory' },
-          { name: 'Walujjo Yusufu', role: 'Production Manager' },
-          { name: 'Mutanda Mark', role: 'Assistant Quality Control' },
-          { name: 'Wanyenze Mariam', role: 'Sales Manager' },
-          { name: 'Muyonjo Adam', role: 'Sales Executive' },
-          { name: 'Nabosa Mariam', role: 'Sales Executive' },
-          { name: 'Ngiira Ben', role: 'Head of Stores' },
-          { name: 'Ochweda Musa Abdallah', role: 'Head of Transport & Delivery' },
-          { name: 'Ahumuza Afiswa', role: 'Accounts Manager' },
-          { name: 'Answer Ivan', role: 'Assistant Accountant' },
-        ].map((member) => (
-          <div key={member.name} className="portal-card bg-white p-5 rounded-lg shadow-md text-center">
-            <h3 className="text-lg font-semibold">{member.name}</h3>
-            <p className="text-gray-600 text-sm">{member.role}</p>
-          </div>
-        ))}
-      </div>
-
-      {/* Tanzania Team */}
-      <h2 className="text-2xl font-semibold mb-4">Tanzania Team — Dar es Salaam</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {[
-          { name: 'Lilia Reuben', role: 'Country General Manager' },
-          { name: 'Patrick Fidelis', role: 'Production / QC Manager' },
-          { name: 'Jenifer Mushi', role: 'Sales Executive' },
-          { name: 'Hellena Felix', role: 'Sales Executive' },
-        ].map((member) => (
-          <div key={member.name} className="portal-card bg-white p-5 rounded-lg shadow-md text-center">
-            <h3 className="text-lg font-semibold">{member.name}</h3>
-            <p className="text-gray-600 text-sm">{member.role}</p>
+      <div className="row g-4 mt-1">
+        {members.map((member, index) => (
+          <div key={member.name} className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay={`.${(index % 4) + 3}s`}>
+            <div className="team-card-items mt-0 h-100">
+              <div className="team-image">
+                <AppImage src={member.image} alt={`${member.name} photo`} width={270} height={280} />
+                <div className="social-profile">
+                  <span className="plus-btn"><i className="fas fa-share-alt" /></span>
+                  <ul>
+                    <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
+                    <li><Link href="#"><i className="fa-brands fa-twitter" /></Link></li>
+                    <li><Link href="#"><i className="fab fa-linkedin-in" /></Link></li>
+                  </ul>
+                </div>
+              </div>
+              <div className="team-content text-center">
+                <h3>
+                  <Link href="/team">{member.name}</Link>
+                </h3>
+                <p>{member.role}</p>
+              </div>
+            </div>
           </div>
         ))}
       </div>
     </div>
+  );
+}
+
+const TeamPage = () => {
+  return (
+    <>
+      <section className="team-section-4 section-padding section-bg">
+        <div className="container">
+          <div className="section-title text-center">
+            <span className="wow fadeInUp">Our Team</span>
+            <h2 className="wow fadeInUp" data-wow-delay=".2s">
+              Leadership &amp; Functional Teams
+            </h2>
+          </div>
+          <p className="text-center mt-3 mb-4">
+            Meet the leadership and specialist teams driving Nusula and Brothers Enterprises forward through operational discipline,
+            product quality, and long-term client partnerships across Uganda and Tanzania.
+          </p>
+
+          <TeamGrid title="Executive Leadership" members={executiveLeadership} />
+          <TeamGrid title="Uganda Operations Team" members={ugandaOperations} />
+          <TeamGrid title="Tanzania Team - Dar es Salaam" members={tanzaniaTeam} />
+        </div>
+      </section>
+    </>
   );
 };
 

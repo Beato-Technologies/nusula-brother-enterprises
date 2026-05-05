@@ -16,6 +16,9 @@ export default function Navbar() {
                     Solutions
                 </Link>
             </li>
+            <li>
+                <Link href="/team">Our Team</Link>
+            </li>
             <li className="has-dropdown">
                 <Link href="/news">
                     Regional Operations

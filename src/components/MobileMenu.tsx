@@ -39,6 +39,9 @@ export default function MobileMenu() {
                                 Services
                             </Link>
                         </li>
+                        <li>
+                            <Link href="/team">Our Team</Link>
+                        </li>
                         <li className="has-dropdown">
                             <Link href="#">
                                 Subsidiaries
