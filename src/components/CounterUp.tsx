@@ -8,7 +8,7 @@ type CounterUpProps = {
     time?: number;
 };
 
-export default function CounterUp({ count, time = 3 }: CounterUpProps) {
+export default function CounterUp({ count, time = 2 }: CounterUpProps) {
     const [counterOn, setCounterOn] = useState(false);
     const spanRef = useRef<HTMLSpanElement>(null);
 

@@ -25,3 +25,174 @@ code {
   font-family:
     source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+/* Hero-3 overrides: more vivid images, less zoom, full-viewport height */
+.hero-3 {
+  min-height: 100vh;
+}
+
+/* Reduce Ken Burns zoom effect on the active slide */
+.hero-3 .swiper-slide-active .slider-image {
+  -webkit-transform: scale(1.04);
+  -moz-transform: scale(1.04);
+  transform: scale(1.04);
+}
+
+/* Lighten the dark gradient overlay so the background images are more vivid */
+.hero-3 .slider-image::before {
+  opacity: 0.75;
+}
+
+@media (min-width: 992px) {
+  .about-equal-height-row {
+    align-items: stretch;
+  }
+
+  .about-media-column {
+    display: flex;
+  }
+
+  .about-media-column .about-image {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+  }
+
+  .about-media-column .about-main-image {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    flex: 1 1 auto;
+    overflow: hidden;
+  }
+
+  .about-media-column .about-main-image img {
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.service-section-3 .row > [class*='col-'] {
+  display: flex;
+}
+
+.service-section-3 .service-card-items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.service-section-3 .service-content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+
+.service-section-3 .service-content .theme-btn-2 {
+  margin-top: auto;
+}
+
+/* Logo wordmark: two-row stacked text next to logo image */
+.logo-wordmark {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+  white-space: nowrap;
+}
+
+.logo-wordmark__top {
+  font-size: clamp(0.92rem, 1.6vw, 1.25rem);
+  font-weight: 700;
+  color: inherit;
+}
+
+.logo-wordmark__bottom {
+  font-size: clamp(0.78rem, 1.25vw, 1rem);
+  font-weight: 400;
+  color: inherit;
+  letter-spacing: 0.03em;
+}
+
+.header-logo--bold {
+  transform-origin: left center;
+}
+
+.header-logo--bold .logo-mark {
+  width: clamp(46px, 4vw, 64px);
+  height: auto;
+}
+
+/* Corporate full-bleed hero treatment inspired by bakhresa.com */
+.hero-bakhresa .bottom-shape,
+.hero-bakhresa .mask-shape,
+.hero-bakhresa .border-shape,
+.hero-bakhresa .circle-shape,
+.hero-bakhresa .frame {
+  display: none;
+}
+
+.hero-bakhresa .slider-image {
+  background-position: center center;
+}
+
+.hero-bakhresa .slider-image::before {
+  background:
+    linear-gradient(
+      100deg,
+      rgba(6, 20, 50, 0.88) 18%,
+      rgba(6, 20, 50, 0.62) 48%,
+      rgba(6, 20, 50, 0.22) 100%
+    ),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.45) 100%);
+  opacity: 1;
+}
+
+.hero-bakhresa .hero-content--bakhresa {
+  max-width: 760px;
+  border-left: 4px solid rgba(255, 255, 255, 0.72);
+  padding-left: 28px;
+}
+
+.hero-bakhresa .hero-content--bakhresa h5 {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.hero-bakhresa .hero-content--bakhresa h1 {
+  font-size: clamp(2.1rem, 5vw, 4.5rem);
+  line-height: 1.05;
+  text-wrap: balance;
+}
+
+.hero-bakhresa .hero-content--bakhresa p {
+  max-width: 64ch;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.hero-bakhresa .hero-content--bakhresa .hero-button {
+  gap: 14px;
+}
+
+@media (max-width: 991px) {
+  .hero-bakhresa .hero-content--bakhresa {
+    border-left: 0;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .header-logo--bold .logo-mark {
+    width: 42px;
+  }
+
+  .logo-wordmark__top {
+    font-size: 0.9rem;
+  }
+
+  .logo-wordmark__bottom {
+    font-size: 0.76rem;
+  }
+}

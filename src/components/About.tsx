@@ -8,8 +8,8 @@ export default function About() {
         <section className="about-section section-padding fix bg-cover" id="about">
             <div className="container">
                 <div className="about-wrapper-2">
-                    <div className="row">
-                        <div className="col-lg-6 wow fadeInUp" data-wow-delay=".4s">
+                    <div className="row about-equal-height-row">
+                        <div className="col-lg-6 wow fadeInUp about-media-column" data-wow-delay=".4s">
                             <div className="about-image">
                                 <div className="shape-image">
                                     <AppImage src="/assets/img/about/shape.png" alt="shape-img" width={351} height={339} />
@@ -17,7 +17,9 @@ export default function About() {
                                 <div className="circle-shape">
                                     <AppImage src="/assets/img/about/circle.png" alt="shape-img" width={138} height={138} />
                                 </div>
-                                <AppImage src="/assets/img/about/Pan2.webp" alt="about-img" width={609} height={561} />
+                                <div className="about-main-image">
+                                    <AppImage src="/assets/img/about/Pan2.webp" alt="about-img" fill sizes="(min-width: 992px) 50vw, 100vw" style={{ objectFit: 'cover', objectPosition: 'center' }} />
+                                </div>
                             </div>
                         </div>
                         <div className="col-lg-6 mt-4 mt-lg-0">

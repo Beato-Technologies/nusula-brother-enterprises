@@ -9,7 +9,7 @@ export default function Service() {
                     <div className="section-title">
                         <span>Our Specializations</span>
                         <h2>
-                            Premium Food Ingredients <br /> For East Africa
+                            Premium Cake Ingredients <br /> For East Africa
                         </h2>
                     </div>
                     <Link href="/services" className="theme-btn">

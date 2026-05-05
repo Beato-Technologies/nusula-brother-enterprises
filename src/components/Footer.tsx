@@ -18,9 +18,12 @@ export default function Footer() {
               <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                 <div className="single-footer-widget">
                   <div className="widget-head">
-                    <Link href="/">
-                      <Image src="/assets/img/logo/Logo.svg" alt="logo-img" width={40} height={40} />
-                      <h3 className='ms-2'>NB <span className='fw-light'>Enterprises</span></h3>
+                    <Link href="/" className='header-logo d-flex align-items-center gap-2'>
+                      <Image src="/assets/img/logo/Logo.png" alt="logo-img" width={40} height={40} />
+                      <div className="logo-wordmark text-white">
+                        <span className="logo-wordmark__top">Nusula Brother</span>
+                        <span className="logo-wordmark__bottom">Enterprises</span>
+                      </div>
                     </Link>
                   </div>
                   <div className="footer-content">

@@ -54,9 +54,12 @@ const Header = ({ scroll }: HeaderProps) => {
               <div className="header-main">
                 <div className="header-left">
                   <div className="logo">
-                    <Link href="/" className="header-logo d-flex align-items-center">
-                      <Image src="/assets/img/logo/Logo.svg" alt="logo-img" width={40} height={40} />
-                      <h3 className='ms-2 d-inline fw-bolder'>NB <span className='fw-light'>Enterprises</span></h3>
+                    <Link href="/" className="header-logo header-logo--bold d-flex align-items-center gap-2">
+                      <Image src="/assets/img/logo/Logo.png" alt="logo-img" width={56} height={56} className="logo-mark" />
+                      <div className="logo-wordmark">
+                        <span className="logo-wordmark__top">Nusula Brother</span>
+                        <span className="logo-wordmark__bottom">Enterprises</span>
+                      </div>
                     </Link>
                   </div>
                 </div>
