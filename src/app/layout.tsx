@@ -4,7 +4,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "../components/Header"; // Placeholder
 import Footer from "../components/Footer"; // Placeholder
-import { AuthProvider } from "@/context/AuthContext"; // Import AuthProvider
 import BackToTop from '@/components/BackToTop';
 
 const kumbh = Kumbh_Sans({
@@ -26,11 +25,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${kumbh.className}`}>
-        <AuthProvider>
-          <Header scroll={false} />
-          <main>{children}</main>
-          <Footer />
-        </AuthProvider>
+        <Header scroll={false} />
+        <main>{children}</main>
+        <Footer />
         <BackToTop />
       </body>
     </html>
