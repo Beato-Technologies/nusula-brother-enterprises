@@ -41,7 +41,8 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
         if (roleError) {
           console.error('Error fetching user role:', roleError);
         } else if (data && data.roles) {
-          setRole(data.roles.name);
+          const roles = data.roles as { name: string } | { name: string }[];
+          setRole(Array.isArray(roles) ? roles[0]?.name : roles.name);
         }
       }
       setLoading(false);
@@ -62,7 +63,8 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
           if (roleError) {
             console.error('Error fetching user role on auth state change:', roleError);
           } else if (data && data.roles) {
-            setRole(data.roles.name);
+            const roles = data.roles as { name: string } | { name: string }[];
+            setRole(Array.isArray(roles) ? roles[0]?.name : roles.name);
           }
         } else {
           setRole(null);
@@ -72,7 +74,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     );
 
     return () => {
-      authListener.unsubscribe();
+      authListener.subscription.unsubscribe();
     };
   }, []);
 
