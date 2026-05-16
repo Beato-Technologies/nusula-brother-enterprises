@@ -1,6 +1,41 @@
+'use client';
+
 import Link from 'next/link';
+import { FormEvent, useState } from 'react';
 
 const ContactPage = () => {
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
+    setMessage(null);
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setMessage({ type: 'success', text: data.message });
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        setMessage({ type: 'error', text: data.error || 'Failed to send message' });
+      }
+    } catch (error) {
+      setMessage({ type: 'error', text: 'An unexpected error occurred. Please try again.' });
+      console.error('Contact form error:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div>
       <section className="contact-section fix section-padding">
@@ -112,29 +147,67 @@ const ContactPage = () => {
                   <p>
                     Connect with our commercial team for product guidance, pricing, and dependable supply planning tailored to your production targets.
                   </p>
-                  <form action="contact.php" id="contact-form" method="POST" className="contact-form-items">
+                  {message && (
+                    <div
+                      className={`alert ${message.type === 'success' ? 'alert-success' : 'alert-danger'} mb-4`}
+                      role="alert"
+                      style={{
+                        padding: '12px 20px',
+                        borderRadius: '4px',
+                        backgroundColor: message.type === 'success' ? '#d4edda' : '#f8d7da',
+                        borderLeft: `4px solid ${message.type === 'success' ? '#28a745' : '#dc3545'}`,
+                        color: message.type === 'success' ? '#155724' : '#721c24',
+                      }}
+                    >
+                      {message.text}
+                    </div>
+                  )}
+                  <form onSubmit={handleSubmit} className="contact-form-items">
                     <div className="row g-4">
                       <div className="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
                         <div className="form-clt">
                           <span>Your name*</span>
-                          <input type="text" name="name" id="name" placeholder="Your Name" />
+                          <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            placeholder="Your Name"
+                            value={formData.name}
+                            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                            required
+                          />
                         </div>
                       </div>
                       <div className="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
                         <div className="form-clt">
                           <span>Your Email*</span>
-                          <input type="text" name="email" id="email" placeholder="Your Email" />
+                          <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Your Email"
+                            value={formData.email}
+                            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                            required
+                          />
                         </div>
                       </div>
                       <div className="col-lg-12 wow fadeInUp" data-wow-delay=".7s">
                         <div className="form-clt">
                           <span>Write Message*</span>
-                          <textarea name="message" id="message" placeholder="Write Message" />
+                          <textarea
+                            name="message"
+                            id="message"
+                            placeholder="Write Message"
+                            value={formData.message}
+                            onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                            required
+                          />
                         </div>
                       </div>
                       <div className="col-lg-7 wow fadeInUp" data-wow-delay=".9s">
-                        <button type="submit" className="theme-btn">
-                          Send Message <i className="fa-solid fa-arrow-right-long" />
+                        <button type="submit" className="theme-btn" disabled={loading}>
+                          {loading ? 'Sending...' : 'Send Message'} <i className="fa-solid fa-arrow-right-long" />
                         </button>
                       </div>
                     </div>
