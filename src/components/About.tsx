@@ -18,7 +18,7 @@ export default function About() {
                                     <AppImage src="/assets/img/about/circle.png" alt="shape-img" width={138} height={138} />
                                 </div>
                                 <div className="about-main-image">
-                                    <AppImage src="/assets/img/about/Pan2.webp" alt="about-img" fill sizes="(min-width: 992px) 50vw, 100vw" style={{ objectFit: 'cover', objectPosition: 'center' }} />
+                                    <AppImage src="/assets/img/company/product-cake-gel-3-sizes.jpg" alt="about-img" fill sizes="(min-width: 992px) 50vw, 100vw" style={{ objectFit: 'cover', objectPosition: 'center' }} />
                                 </div>
                             </div>
                         </div>

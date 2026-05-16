@@ -21,7 +21,7 @@ export default function Service() {
                     <div className="col-xl-3 col-lg-4 col-md-6">
                         <div className="service-card-items">
                             <div className="service-image">
-                                <AppImage src="/assets/img/service/02.jpg" alt="service-img" width={270} height={160} />
+                                <AppImage src="/assets/img/company/product-cake-gel-3-sizes.jpg" alt="service-img" width={270} height={160} />
                             </div>
                             <div className="icon-2">
                                 <AppImage src="/assets/img/service/icon/s-icon-1.svg" alt="img" width={40} height={40} />
@@ -46,7 +46,7 @@ export default function Service() {
                     <div className="col-xl-3 col-lg-4 col-md-6">
                         <div className="service-card-items">
                             <div className="service-image">
-                                <AppImage src="/assets/img/service/03.jpg" alt="service-img" width={270} height={160} />
+                                <AppImage src="/assets/img/company/product-icing-sugar.jpg" alt="service-img" width={270} height={160} />
                             </div>
                             <div className="icon-2">
                                 <AppImage src="/assets/img/service/icon/s-icon-2.svg" alt="img" width={40} height={40} />
@@ -71,7 +71,7 @@ export default function Service() {
                     <div className="col-xl-3 col-lg-4 col-md-6">
                         <div className="service-card-items">
                             <div className="service-image">
-                                <AppImage src="/assets/img/service/04.jpg" alt="service-img" width={270} height={160} />
+                                <AppImage src="/assets/img/company/product-cr-630.jpg" alt="service-img" width={270} height={160} />
                             </div>
                             <div className="icon-2">
                                 <AppImage src="/assets/img/service/icon/s-icon-4.svg" alt="img" width={40} height={40} />
@@ -96,7 +96,7 @@ export default function Service() {
                     <div className="col-xl-3 col-lg-4 col-md-6">
                         <div className="service-card-items">
                             <div className="service-image">
-                                <AppImage src="/assets/img/service/05.jpg" alt="service-img" width={270} height={160} />
+                                <AppImage src="/assets/img/company/company-truck-with-products.jpg" alt="service-img" width={270} height={160} />
                             </div>
                             <div className="icon-2">
                                 <AppImage src="/assets/img/service/icon/s-icon-3.svg" alt="img" width={40} height={40} />

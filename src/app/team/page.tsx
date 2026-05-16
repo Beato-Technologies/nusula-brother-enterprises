@@ -1,6 +1,7 @@
 import React from 'react';
 import AppImage from '../../components/AppImage';
 import Link from 'next/link';
+import Breadcrumb from '@/components/BreadCrumb';
 
 type TeamMember = {
   name: string;
@@ -69,6 +70,12 @@ function TeamGrid({ title, members }: { title: string; members: TeamMember[] }) 
 const TeamPage = () => {
   return (
     <>
+      <Breadcrumb
+        breadcrumbTitle="Our Team"
+        bgImage="/assets/img/company/staff-ug.jpg"
+        bgClasses="bg-cover"
+        bgStyle={{ backgroundPositionY: '38%' }}
+        overlayOpacity={0.5} />
       <section className="team-section-4 section-padding section-bg">
         <div className="container">
           <div className="section-title text-center">

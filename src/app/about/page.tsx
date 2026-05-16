@@ -26,9 +26,9 @@ export default function AboutPage() {
                       <p>of Industry Growth</p>
                     </div>
                   </div>
-                  <div className="about-image-1 bg-cover wow fadeInLeft" data-wow-delay=".3s" style={{ backgroundImage: 'url("assets/img/about/03.png")' }}>
+                  <div className="about-image-1 bg-cover wow fadeInLeft" data-wow-delay=".3s" style={{ backgroundImage: 'url("assets/img/company/product-bakers-fat.jpg")' }}>
                     <div className="about-image-2 wow fadeInUp" data-wow-delay=".5s">
-                      <AppImage src="/assets/img/about/04.jpg" alt="about-img" width={247} height={271} />
+                      <AppImage src="/assets/img/company/product-cake-gel-2-sizes.jpg" alt="about-img" width={247} height={271} />
                     </div>
                   </div>
                 </div>
@@ -316,7 +316,7 @@ export default function AboutPage() {
             <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
               <div className="single-team-items">
                 <div className="team-image">
-                  <AppImage src="/assets/img/team/04.jpg" alt="team-img" width={270} height={280} />
+                  <AppImage src="/assets/img/company/staff-ug.jpg" alt="team-img" width={270} height={280} />
                   <div className="social-profile">
                     <ul>
                       <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
@@ -337,7 +337,7 @@ export default function AboutPage() {
             <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".5s">
               <div className="single-team-items">
                 <div className="team-image">
-                  <AppImage src="/assets/img/team/05.jpg" alt="team-img" width={270} height={308} />
+                  <AppImage src="/assets/img/company/staff-ug.jpg" alt="team-img" width={270} height={308} />
                   <div className="social-profile">
                     <ul>
                       <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
@@ -358,7 +358,7 @@ export default function AboutPage() {
             <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".7s">
               <div className="single-team-items">
                 <div className="team-image">
-                  <AppImage src="/assets/img/team/06.jpg" alt="team-img" width={270} height={280} />
+                  <AppImage src="/assets/img/company/staff-masked.jpg" alt="team-img" width={270} height={280} />
                   <div className="social-profile">
                     <ul>
                       <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
@@ -379,7 +379,7 @@ export default function AboutPage() {
             <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".9s">
               <div className="single-team-items">
                 <div className="team-image">
-                  <AppImage src="/assets/img/team/07.jpg" alt="team-img" width={270} height={280} />
+                  <AppImage src="/assets/img/company/staff-masked.jpg" alt="team-img" width={270} height={280} />
                   <div className="social-profile">
                     <ul>
                       <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>

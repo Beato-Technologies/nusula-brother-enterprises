@@ -1,19 +1,28 @@
 import Link from "next/link"
+import { CSSProperties } from "react"
 
 type BreadcrumbProps = {
     breadcrumbTitle: string;
+    bgImage?: string;
+    bgClasses?: string;
+    bgStyle?: CSSProperties;
+    overlayOpacity?: number;
 };
 
-export default function Breadcrumb({ breadcrumbTitle }: BreadcrumbProps) {
+export default function Breadcrumb({ breadcrumbTitle, bgImage, bgClasses = 'bg-cover', bgStyle, overlayOpacity }: BreadcrumbProps) {
+    const mergedStyle: CSSProperties = {
+        backgroundImage: `url(${bgImage || '/assets/img/breadcrumb.jpg'})`,
+        ...(overlayOpacity !== undefined ? { ['--breadcrumb-overlay-opacity' as string]: String(overlayOpacity) } : {}),
+        ...bgStyle,
+    };
+
     return (
         <>
-            <div className="breadcrumb-wrapper bg-cover" style={{ backgroundImage: 'url("assets/img/breadcrumb.jpg")' }}>
-                <div className="border-shape">
-                    <img src="/assets/img/element.png" alt="shape-img" />
-                </div>
-                <div className="line-shape">
+            <div className={`breadcrumb-wrapper ${bgClasses}`} style={mergedStyle}>
+                {/* <div> */}
+                {/* <div className="line-shape">
                     <img src="/assets/img/line-element.png" alt="shape-img" />
-                </div>
+                </div> */}
                 <div className="container">
                     <div className="page-heading">
                         <h1 className="wow fadeInUp" data-wow-delay=".3s">{breadcrumbTitle}</h1>
