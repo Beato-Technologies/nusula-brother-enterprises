@@ -13,35 +13,35 @@ export type ProductInfo = {
 const productInfoItems: ProductInfo[] = [
     {
         imageSrc: '/assets/img/company/product-cake-gel-3-sizes.jpg',
-        iconSrc: '/assets/img/service/icon/s-icon-11.svg',
+        iconSrc: '/assets/img/service/icon/ingredient.png',
         title: 'Manufactured Ingredients',
         description:
             'Cake Gel, Baker\'s Fat, Icing Sugar, Pan Grease, White Table Vinegar and CR Products (CR600 & CR630) — made under strict UNBS & TBS standards.',
     },
     {
         imageSrc: '/assets/img/company/product-icing-sugar.jpg',
-        iconSrc: '/assets/img/service/icon/s-icon-7.svg',
+        iconSrc: '/assets/img/service/icon/blend.png',
         title: 'Cake Premixes',
         description:
             'A full range of Fastbakes premixes — American Oil Muffin, Spongy Cake, Red Velvet, Cup Cake, Smoothie Cake, Magdalenas, and more.',
     },
     {
         imageSrc: '/assets/img/company/product-cr-630.jpg',
-        iconSrc: '/assets/img/service/icon/s-icon-8.svg',
+        iconSrc: '/assets/img/service/icon/calcium.png',
         title: 'Traded Specialty Ingredients',
         description:
             'Caramel, Potassium & Calcium Sorbate, Desiccated Coconut, Corn Starch, Gelatin, Xanthan Gum, Food Flavors, and more — reliably sourced.',
     },
     {
         imageSrc: '/assets/img/company/product-bakers-fat-packaging.jpg',
-        iconSrc: '/assets/img/service/icon/s-icon-1.svg',
+        iconSrc: '/assets/img/service/icon/gel.png',
         title: 'Fastbakes Bakers Fat',
         description:
             'A premium quality baking fat made from refined palm oil, stearin, and vegetable oil — enriched with emulsifiers and food-grade additives for consistent texture, volume, and shelf life in breads, pastries, and confectionery.',
     },
     {
         imageSrc: '/assets/img/company/company-truck-with-products.jpg',
-        iconSrc: '/assets/img/service/icon/s-icon-3.svg',
+        iconSrc: '/assets/img/service/icon/delivery-truck.png',
         title: 'Regional Distribution',
         description:
             'Serving Uganda and Tanzania with efficient delivery networks — supporting bakeries, processors, and food manufacturers across East Africa.',
@@ -90,7 +90,7 @@ export default function Service() {
                                 <div className="content">
                                     <span>Call Us Now</span>
                                     <h4>
-                                        <Link href="tel:+255796317866">+255 796 317 866</Link>
+                                        <Link href="tel:+256703412545">+256 703 412 545</Link>
                                     </h4>
                                 </div>
                             </div>

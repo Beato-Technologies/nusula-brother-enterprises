@@ -1,5 +1,37 @@
 import Link from 'next/link'
-import AppImage from "./AppImage";
+import { ProductInfoCard } from './ProductInfo';
+import { ProductInfo } from '@/app/services/page';
+
+const productItems: ProductInfo[] = [
+    {
+        imageSrc: '/assets/img/company/product-cake-gel-3-sizes.jpg',
+        iconSrc: '/assets/img/service/icon/ingredient.png',
+        title: 'Manufactured Ingredients',
+        description:
+            'Cake Gel, Baker\'s Fat, Icing Sugar, Pan Grease, White Table Vinegar and CR Products (CR600 & CR630) — made under strict UNBS & TBS standards.',
+    },
+    {
+        imageSrc: '/assets/img/company/product-icing-sugar.jpg',
+        iconSrc: '/assets/img/service/icon/blend.png',
+        title: 'Cake Premixes',
+        description:
+            'A full range of Fastbakes premixes — American Oil Muffin, Spongy Cake, Red Velvet, Cup Cake, Smoothie Cake, Magdalenas, and more.',
+    },
+    {
+        imageSrc: '/assets/img/company/product-cr-630.jpg',
+        iconSrc: '/assets/img/service/icon/calcium.png',
+        title: 'Traded Specialty Ingredients',
+        description:
+            'Caramel, Potassium & Calcium Sorbate, Desiccated Coconut, Corn Starch, Gelatin, Xanthan Gum, Food Flavors, and more — reliably sourced.',
+    },
+    {
+        imageSrc: '/assets/img/company/product-bakers-fat-packaging.jpg',
+        iconSrc: '/assets/img/service/icon/gel.png',
+        title: 'Fastbakes Bakers Fat',
+        description:
+            'A premium quality baking fat made from refined palm oil, stearin, and vegetable oil — enriched with emulsifiers and food-grade additives for consistent texture, volume, and shelf life in breads, pastries, and confectionery.',
+    },
+];
 
 export default function Service() {
     return (
@@ -18,106 +50,16 @@ export default function Service() {
                     </Link>
                 </div>
                 <div className="row">
-                    <div className="col-xl-3 col-lg-4 col-md-6">
-                        <div className="service-card-items">
-                            <div className="service-image">
-                                <AppImage src="/assets/img/company/product-cake-gel-3-sizes.jpg" alt="service-img" width={270} height={160} />
-                            </div>
-                            <div className="icon-2">
-                                <AppImage src="/assets/img/service/icon/s-icon-1.svg" alt="img" width={40} height={40} />
-                            </div>
-                            <div className="service-content">
-                                <div className="icon">
-                                    <AppImage src="/assets/img/service/icon/s-icon-1.svg" alt="img" width={40} height={40} />
-                                </div>
-                                <h4>
-                                    <Link href="/services">Manufactured Ingredients</Link>
-                                </h4>
-                                <p>
-                                    Cake Gel, Baker&apos;s Fat, Icing Sugar, Pan Grease, White Table Vinegar and CR Products (CR600 &amp; CR630) — made under strict UNBS &amp; TBS standards.
-                                </p>
-                                <Link href="/services" className="theme-btn-2 mt-3">
-                                    Learn More
-                                    <i className="fa-solid fa-arrow-right-long" />
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-xl-3 col-lg-4 col-md-6">
-                        <div className="service-card-items">
-                            <div className="service-image">
-                                <AppImage src="/assets/img/company/product-icing-sugar.jpg" alt="service-img" width={270} height={160} />
-                            </div>
-                            <div className="icon-2">
-                                <AppImage src="/assets/img/service/icon/s-icon-2.svg" alt="img" width={40} height={40} />
-                            </div>
-                            <div className="service-content">
-                                <div className="icon">
-                                    <AppImage src="/assets/img/service/icon/s-icon-2.svg" alt="img" width={40} height={40} />
-                                </div>
-                                <h4>
-                                    <Link href="/services">Cake Premixes</Link>
-                                </h4>
-                                <p>
-                                    A full range of Fastbakes premixes — American Oil Muffin, Spongy Cake, Red Velvet, Cup Cake, Smoothie Cake, Magdalenas, and more.
-                                </p>
-                                <Link href="/services" className="theme-btn-2 mt-3">
-                                    Learn More
-                                    <i className="fa-solid fa-arrow-right-long" />
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-xl-3 col-lg-4 col-md-6">
-                        <div className="service-card-items">
-                            <div className="service-image">
-                                <AppImage src="/assets/img/company/product-cr-630.jpg" alt="service-img" width={270} height={160} />
-                            </div>
-                            <div className="icon-2">
-                                <AppImage src="/assets/img/service/icon/s-icon-4.svg" alt="img" width={40} height={40} />
-                            </div>
-                            <div className="service-content">
-                                <div className="icon">
-                                    <AppImage src="/assets/img/service/icon/s-icon-5.svg" alt="img" width={40} height={40} />
-                                </div>
-                                <h4>
-                                    <Link href="/services">Traded Specialty Ingredients</Link>
-                                </h4>
-                                <p>
-                                    Caramel, Potassium &amp; Calcium Sorbate, Desiccated Coconut, Corn Starch, Gelatin, Xanthan Gum, Food Flavors, and more — reliably sourced.
-                                </p>
-                                <Link href="/services" className="theme-btn-2 mt-3">
-                                    Learn More
-                                    <i className="fa-solid fa-arrow-right-long" />
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-xl-3 col-lg-4 col-md-6">
-                        <div className="service-card-items">
-                            <div className="service-image">
-                                <AppImage src="/assets/img/company/company-truck-with-products.jpg" alt="service-img" width={270} height={160} />
-                            </div>
-                            <div className="icon-2">
-                                <AppImage src="/assets/img/service/icon/s-icon-3.svg" alt="img" width={40} height={40} />
-                            </div>
-                            <div className="service-content">
-                                <div className="icon">
-                                    <AppImage src="/assets/img/service/icon/s-icon-3.svg" alt="img" width={40} height={40} />
-                                </div>
-                                <h4>
-                                    <Link href="/services">Regional Distribution</Link>
-                                </h4>
-                                <p>
-                                    Serving Uganda and Tanzania with efficient delivery networks — supporting bakeries, processors, and food manufacturers across East Africa.
-                                </p>
-                                <Link href="/services" className="theme-btn-2 mt-3">
-                                    Learn More
-                                    <i className="fa-solid fa-arrow-right-long" />
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
+                    {productItems.map((item) => (
+                        <ProductInfoCard
+                            key={item.title}
+                            imageSrc={item.imageSrc}
+                            iconSrc={item.iconSrc}
+                            contentIconSrc={item.contentIconSrc}
+                            title={item.title}
+                            description={item.description}
+                        />
+                    ))}
                 </div>
             </div>
             <div className="cta-banner-2 section-padding">

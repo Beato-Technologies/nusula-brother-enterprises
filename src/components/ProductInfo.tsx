@@ -23,7 +23,7 @@ export function ProductInfoCard({ imageSrc, iconSrc, contentIconSrc, title, desc
                     </h4>
                     <p>{description}</p>
                     <Link href="/contact" className="theme-btn-2 mt-3">
-                        Learn More
+                        Contact us for a quote
                         <i className="fa-solid fa-arrow-right-long" />
                     </Link>
                 </div>

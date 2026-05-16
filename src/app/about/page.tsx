@@ -26,9 +26,9 @@ export default function AboutPage() {
                       <p>of Industry Growth</p>
                     </div>
                   </div>
-                  <div className="about-image-1 bg-cover wow fadeInLeft" data-wow-delay=".3s" style={{ backgroundImage: 'url("assets/img/company/product-bakers-fat.jpg")' }}>
+                  <div className="about-image-1 bg-cover wow fadeInLeft" data-wow-delay=".3s" style={{ backgroundImage: 'url("/assets/img/company/product-cake-gel-3-sizes.jpg")' }}>
                     <div className="about-image-2 wow fadeInUp" data-wow-delay=".5s">
-                      <AppImage src="/assets/img/company/product-cake-gel-2-sizes.jpg" alt="about-img" width={247} height={271} />
+                      <AppImage src="/assets/img/company/product-baking-spray.jpg" alt="about-img" width={247} height={200} />
                     </div>
                   </div>
                 </div>

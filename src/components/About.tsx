@@ -76,7 +76,7 @@ export default function About() {
                                         <div className="content">
                                             <span>Talk to Our Team</span>
                                             <h5>
-                                                <Link href="tel:+255796317866">+255 796 317 866</Link>
+                                                <Link href="tel:+256703412545">+256 703 412 545</Link>
                                             </h5>
                                         </div>
                                     </div>
