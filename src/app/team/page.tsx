@@ -1,13 +1,6 @@
 import React from 'react';
-import AppImage from '../../components/AppImage';
-import Link from 'next/link';
 import Breadcrumb from '@/components/BreadCrumb';
-
-type TeamMember = {
-  name: string;
-  role: string;
-  image: string;
-};
+import TeamMembersBlock, { TeamMember } from '@/components/TeamMembersBlock';
 
 const executiveLeadership: TeamMember[] = [
   { name: 'Hajjati Nemwa Nusula Njogi', role: 'Chief Executive Officer', image: '/assets/img/team/Nusula.webp' },
@@ -32,41 +25,6 @@ const tanzaniaTeam: TeamMember[] = [
   { name: 'Hellena Felix Muyenga', role: 'Sales Executive', image: '/assets/img/team/Helena.jpeg' },
 ];
 
-function TeamGrid({ title, members }: { title: string; members: TeamMember[] }) {
-  return (
-    <div className="mt-5">
-      <div className="section-title mb-0">
-        <h3 className='text-2xl pt-5 fw-bold'>{title}</h3>
-      </div>
-      <div className="row g-4 mt-1">
-        {members.map((member, index) => (
-          <div key={member.name} className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay={`.${(index % 4) + 3}s`}>
-            <div className="team-card-items mt-0 h-100">
-              <div className="team-image">
-                <AppImage src={member.image} alt={`${member.name} photo`} width={270} height={280} />
-                <div className="social-profile">
-                  <span className="plus-btn"><i className="fas fa-share-alt" /></span>
-                  <ul>
-                    <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
-                    <li><Link href="#"><i className="fa-brands fa-twitter" /></Link></li>
-                    <li><Link href="#"><i className="fab fa-linkedin-in" /></Link></li>
-                  </ul>
-                </div>
-              </div>
-              <div className="team-content text-center">
-                <h3>
-                  <Link href="/team">{member.name}</Link>
-                </h3>
-                <p>{member.role}</p>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
 const TeamPage = () => {
   return (
     <>
@@ -89,9 +47,30 @@ const TeamPage = () => {
             product quality, and long-term client partnerships across Uganda and Tanzania.
           </p>
 
-          <TeamGrid title="Executive Leadership" members={executiveLeadership} />
-          <TeamGrid title="Uganda Operations Team" members={ugandaOperations} />
-          <TeamGrid title="Tanzania Team - Dar es Salaam" members={tanzaniaTeam} />
+          <TeamMembersBlock
+            title="Executive Leadership"
+            members={executiveLeadership}
+            wrapperClassName="mt-5"
+            rowClassName="row g-4 mt-1"
+            cardClassName="team-card-items mt-0 h-100"
+            nameHrefFallback="/team"
+          />
+          <TeamMembersBlock
+            title="Uganda Operations Team"
+            members={ugandaOperations}
+            wrapperClassName="mt-5"
+            rowClassName="row g-4 mt-1"
+            cardClassName="team-card-items mt-0 h-100"
+            nameHrefFallback="/team"
+          />
+          <TeamMembersBlock
+            title="Tanzania Team - Dar es Salaam"
+            members={tanzaniaTeam}
+            wrapperClassName="mt-5"
+            rowClassName="row g-4 mt-1"
+            cardClassName="team-card-items mt-0 h-100"
+            nameHrefFallback="/team"
+          />
         </div>
       </section>
     </>

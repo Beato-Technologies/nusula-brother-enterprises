@@ -136,7 +136,7 @@ export async function POST(request: NextRequest) {
           </div>
           <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
           <p style="font-size: 12px; color: #999;">
-            This email was sent from the Nusula & Brothers Enterprise contact form.
+            This email was sent from the Nusula & Brother Enterprises contact form.
           </p>
         </div>
       `,
@@ -150,14 +150,14 @@ export async function POST(request: NextRequest) {
             const confirmationEmail = {
                 from: fromEmail,
                 to: email,
-                subject: 'We received your message - Nusula & Brothers Enterprise',
+                subject: 'We received your message - Nusula & Brother Enterprises',
                 html: `
           <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
             <h2 style="color: #0b7a46;">Message Received</h2>
             <p>Hi ${escapeHtml(name)},</p>
-            <p>Thank you for contacting Nusula & Brothers Enterprise. We have received your message and will get back to you as soon as possible.</p>
+            <p>Thank you for contacting Nusula & Brother Enterprises. We have received your message and will get back to you as soon as possible.</p>
             <p>Our commercial team will review your inquiry and reach out within 24-48 hours.</p>
-            <p>Best regards,<br />Nusula & Brothers Enterprise Team</p>
+            <p>Best regards,<br />Nusula & Brother Enterprises Team</p>
             <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
             <p style="font-size: 12px; color: #999;">
               If you did not send this message, please ignore this email.

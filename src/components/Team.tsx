@@ -1,5 +1,29 @@
 import Link from 'next/link';
 import AppImage from './AppImage';
+import TeamMembersBlock, { TeamMember } from './TeamMembersBlock';
+
+const leadershipMembers: TeamMember[] = [
+    {
+        name: 'Hajjati Nemwa Nusula Njogi',
+        role: 'CEO',
+        image: '/assets/img/team/Nusula.webp',
+    },
+    {
+        name: 'Mr. Lujja Nasur Wawire',
+        role: 'Executive Director',
+        image: '/assets/img/team/Lujja.webp',
+    },
+    {
+        name: 'Kabwanga Ismail Tijjani, PhD',
+        role: 'Director, Quality Control & Human Resources',
+        image: '/assets/img/team/Ismail.webp',
+    },
+    {
+        name: 'Mirembe Mida',
+        role: 'General Manager, Factory',
+        image: '/assets/img/team/generic.jpg',
+    },
+];
 
 export default function Team() {
     return (
@@ -23,92 +47,10 @@ export default function Team() {
                         <i className="fa-solid fa-arrow-right-long" />
                     </Link>
                 </div>
-                <div className="row team-equal-height-row">
-                    <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp d-flex" data-wow-delay=".3s">
-                        <div className="single-team-items">
-                            <div className="team-image">
-                                <AppImage src="/assets/img/team/Nusula.webp" alt="team-img" width={270} height={280} />
-                                <div className="social-profile">
-                                    <ul>
-                                        <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
-                                        <li><Link href="#"><i className="fa-brands fa-twitter" /></Link></li>
-                                        <li><Link href="#"><i className="fab fa-linkedin-in" /></Link></li>
-                                    </ul>
-                                    <span className="plus-btn"><i className="fas fa-share-alt" /></span>
-                                </div>
-                            </div>
-                            <div className="team-content text-center">
-                                <h3>
-                                    <Link href="/team-details">Hajjati Nemwa Nusula Njogi</Link>
-                                </h3>
-                                <p>CEO</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp d-flex" data-wow-delay=".5s">
-                        <div className="single-team-items">
-                            <div className="team-image">
-                                <AppImage src="/assets/img/team/Lujja.webp" alt="team-img" width={270} height={280} />
-                                <div className="social-profile">
-                                    <ul>
-                                        <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
-                                        <li><Link href="#"><i className="fa-brands fa-twitter" /></Link></li>
-                                        <li><Link href="#"><i className="fab fa-linkedin-in" /></Link></li>
-                                    </ul>
-                                    <span className="plus-btn"><i className="fas fa-share-alt" /></span>
-                                </div>
-                            </div>
-                            <div className="team-content text-center">
-                                <h3>
-                                    <Link href="/team-details">Mr. Lujja Nasur Wawire</Link>
-                                </h3>
-                                <p>Executive Director</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp d-flex" data-wow-delay=".7s">
-                        <div className="single-team-items">
-                            <div className="team-image">
-                                <AppImage src="/assets/img/team/Ismail.webp" alt="team-img" width={270} height={280} />
-                                <div className="social-profile">
-                                    <ul>
-                                        <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
-                                        <li><Link href="#"><i className="fa-brands fa-twitter" /></Link></li>
-                                        <li><Link href="#"><i className="fab fa-linkedin-in" /></Link></li>
-                                    </ul>
-                                    <span className="plus-btn"><i className="fas fa-share-alt" /></span>
-                                </div>
-                            </div>
-                            <div className="team-content text-center">
-                                <h3>
-                                    <Link href="/team-details">Kabwanga Ismail Tijjani, PhD</Link>
-                                </h3>
-                                <p>Director, Quality Control & Human Resources</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp d-flex" data-wow-delay=".9s">
-                        <div className="single-team-items">
-                            <div className="team-image">
-                                <AppImage src="/assets/img/team/generic.jpg" alt="team-img" width={270} height={280} />
-                                <div className="social-profile">
-                                    <ul>
-                                        <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
-                                        <li><Link href="#"><i className="fa-brands fa-twitter" /></Link></li>
-                                        <li><Link href="#"><i className="fab fa-linkedin-in" /></Link></li>
-                                    </ul>
-                                    <span className="plus-btn"><i className="fas fa-share-alt" /></span>
-                                </div>
-                            </div>
-                            <div className="team-content text-center">
-                                <h3>
-                                    <Link href="/team-details">Mirembe Mida</Link>
-                                </h3>
-                                <p>General Manager, Factory</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <TeamMembersBlock
+                    members={leadershipMembers}
+                    rowClassName="row team-equal-height-row"
+                />
             </div>
         </section>
     );
