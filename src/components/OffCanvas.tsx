@@ -21,7 +21,7 @@ export default function Offcanvas({
     const navItems: NavItem[] = [
         { href: '/', label: 'Home' },
         { href: '/about', label: 'About' },
-        { href: '/services', label: 'Solutions' },
+        { href: '/services', label: 'Products' },
         {
             href: '/#', label: 'Subsidiaries', children: [
                 { href: '/subsidiaries/tanzania', label: 'Tanzania' },
@@ -108,7 +108,7 @@ export default function Offcanvas({
                                             <i className="fal fa-map-marker-alt" />
                                         </div>
                                         <div className="offcanvas__contact-text">
-                                            Plot 16, Chango&apos;mbe Area, Dar es Salaam, Tanzania
+                                            SMS House, 2nd Floor, 7th Street Industrial Area, Kampala, Uganda
                                         </div>
                                     </li>
                                     <li className="d-flex align-items-center">
@@ -124,7 +124,7 @@ export default function Offcanvas({
                                             <i className="far fa-phone" />
                                         </div>
                                         <div className="offcanvas__contact-text">
-                                            <Link href="tel:+255796317866">+255 796 317 866</Link>
+                                            <Link href="tel:+256703412545">+256 703 412 545</Link>
                                         </div>
                                     </li>
                                 </ul>

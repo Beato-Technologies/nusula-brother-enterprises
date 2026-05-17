@@ -1,5 +1,8 @@
 
+import AppImage from '@/components/AppImage';
 import { ProductInfoCard } from '@/components/ProductInfo';
+import { ProductSlideItem } from '@/components/ProductSlideCard';
+import ProductSlider from '@/components/ProductSlider';
 import Link from 'next/link'
 
 export type ProductInfo = {
@@ -10,41 +13,36 @@ export type ProductInfo = {
     description: string;
 };
 
-const productInfoItems: ProductInfo[] = [
+const products: ProductInfo[] = [
     {
-        imageSrc: '/assets/img/company/product-cake-gel-3-sizes.jpg',
+        imageSrc: '/assets/img/company/product-cake-improver.jpg',
+        title: 'CR 600',
+        description: 'Improves cake crust color and freshness.',
         iconSrc: '/assets/img/service/icon/ingredient.png',
-        title: 'Manufactured Ingredients',
-        description:
-            'Cake Gel, Baker\'s Fat, Icing Sugar, Pan Grease, White Table Vinegar and CR Products (CR600 & CR630) — made under strict UNBS & TBS standards.',
-    },
-    {
-        imageSrc: '/assets/img/company/product-icing-sugar.jpg',
-        iconSrc: '/assets/img/service/icon/blend.png',
-        title: 'Cake Premixes',
-        description:
-            'A full range of Fastbakes premixes — American Oil Muffin, Spongy Cake, Red Velvet, Cup Cake, Smoothie Cake, Magdalenas, and more.',
     },
     {
         imageSrc: '/assets/img/company/product-cr-630.jpg',
-        iconSrc: '/assets/img/service/icon/calcium.png',
-        title: 'Traded Specialty Ingredients',
-        description:
-            'Caramel, Potassium & Calcium Sorbate, Desiccated Coconut, Corn Starch, Gelatin, Xanthan Gum, Food Flavors, and more — reliably sourced.',
+        title: 'CR 630',
+        description: 'Leavening agent for whitening cake texture, firmness, stability and great taste.',
+        iconSrc: '/assets/img/service/icon/ingredient.png',
     },
     {
-        imageSrc: '/assets/img/company/product-bakers-fat-packaging.jpg',
-        iconSrc: '/assets/img/service/icon/gel.png',
-        title: 'Fastbakes Bakers Fat',
-        description:
-            'A premium quality baking fat made from refined palm oil, stearin, and vegetable oil — enriched with emulsifiers and food-grade additives for consistent texture, volume, and shelf life in breads, pastries, and confectionery.',
+        imageSrc: '/assets/img/company/cake-gel.png',
+        title: 'Cake Gel',
+        description: 'Stabilizes the bubbles in the batter, improves cake volume, crust appearance, and reduces cake production costs.',
+        iconSrc: '/assets/img/service/icon/ingredient.png',
     },
     {
-        imageSrc: '/assets/img/company/company-truck-with-products.jpg',
-        iconSrc: '/assets/img/service/icon/delivery-truck.png',
-        title: 'Regional Distribution',
-        description:
-            'Serving Uganda and Tanzania with efficient delivery networks — supporting bakeries, processors, and food manufacturers across East Africa.',
+        imageSrc: '/assets/img/company/product-bakers-fat.jpg',
+        title: 'Fastbakes Baker\'s Fat',
+        description: 'Supports dough tolerance and uniform loaf quality at scale.',
+        iconSrc: '/assets/img/service/icon/ingredient.png',
+    },
+    {
+        imageSrc: '/assets/img/company/pan-grease.png',
+        title: 'Pan Grease',
+        description: 'Prevents sticking of baked products in baking pans/tins',
+        iconSrc: '/assets/img/service/icon/ingredient.png',
     },
 ];
 
@@ -53,27 +51,22 @@ const productInfoItems: ProductInfo[] = [
 export default function Service() {
     return (
         <>
-            <section className="service-section-3 pb-0 fix section-padding bg-cover" style={{ backgroundImage: 'url("assets/img/service/service-bg-3.jpg")' }}>
+            <section className="service-section-3 pb-0 pt-5 fix section-padding bg-cover" style={{ backgroundImage: 'url("assets/img/service/service-bg-3.jpg")' }}>
                 <div className="container">
                     <div className="section-title-area">
                         <div className="section-title">
                             <span>Our Specializations</span>
                             <h2>
-                                Premium Ingredient Solutions <br /> For East Africa
+                                Premium Ingredients <br /> For East Africa
                             </h2>
                         </div>
-                        <Link href="/services" className="theme-btn">
-                            Explore All Solutions
-                            <i className="fa-solid fa-arrow-right-long" />
-                        </Link>
                     </div>
                     <div className="row">
-                        {productInfoItems.map((item) => (
+                        {products.map((item) => (
                             <ProductInfoCard
                                 key={item.title}
                                 imageSrc={item.imageSrc}
                                 iconSrc={item.iconSrc}
-                                contentIconSrc={item.contentIconSrc}
                                 title={item.title}
                                 description={item.description}
                             />

@@ -184,7 +184,7 @@ export default async function SubsidiaryPage({ params }: Props) {
                         </ul>
                         <div className="mt-4">
                             <Link href="/services" className="theme-btn theme-btn-outline">
-                                <span>View All Solutions <i className="fa-solid fa-arrow-right-long" /></span>
+                                <span>View All Products <i className="fa-solid fa-arrow-right-long" /></span>
                             </Link>
                         </div>
                     </div>

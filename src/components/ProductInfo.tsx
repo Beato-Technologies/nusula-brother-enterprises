@@ -2,9 +2,7 @@ import Link from 'next/link';
 import AppImage from './AppImage';
 import { ProductInfo } from '@/app/services/page';
 
-export function ProductInfoCard({ imageSrc, iconSrc, contentIconSrc, title, description }: ProductInfo) {
-    const iconForContent = contentIconSrc || iconSrc;
-
+export function ProductInfoCard({ imageSrc, iconSrc, title, description }: ProductInfo) {
     return (
         <div className="col-xl-3 col-lg-4 col-md-6 pt-4">
             <div className="service-card-items">
@@ -15,9 +13,6 @@ export function ProductInfoCard({ imageSrc, iconSrc, contentIconSrc, title, desc
                     <AppImage src={iconSrc} alt={`${title} icon`} width={40} height={40} />
                 </div>
                 <div className="service-content">
-                    <div className="icon">
-                        <AppImage src={iconForContent} alt={`${title} icon`} width={40} height={40} />
-                    </div>
                     <h4>
                         <Link href="/services">{title}</Link>
                     </h4>

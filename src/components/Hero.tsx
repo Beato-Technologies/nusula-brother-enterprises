@@ -34,7 +34,7 @@ const slides: HeroSlide[] = [
         backgroundImage: "assets/img/hero/slidehome-pangrease.png",
         backgroundPosition: "center center",
         subtitle: "Uganda Headquarters, Tanzania Expansion",
-        titleLine1: "Sustainable Solutions",
+        titleLine1: "Sustainable Products",
         titleLine2: "For Food Processing Industries",
         description: "With headquarters in Uganda and expansion to Dar es Salaam in 2025, we continue to transform our industry while staying true to our core values and mission.",
     },

@@ -2,8 +2,7 @@
 
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
-import Link from "next/link";
-import AppImage from "./AppImage";
+import ProductSlideCard, { ProductSlideItem } from "./ProductSlideCard";
 
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
@@ -46,106 +45,45 @@ type ProductSliderProps = {
     showDots?: boolean;
 }
 
+const productSlides: ProductSlideItem[] = [
+    {
+        imageSrc: '/assets/img/company/product-cake-improver.jpg',
+        name: 'CR 600',
+        description: 'Improves cake crust color and freshness.',
+    },
+    {
+        imageSrc: '/assets/img/company/product-cr-630.jpg',
+        name: 'CR 630',
+        description: 'Leavening agent for whitening cake texture, firmness, stability and great taste.',
+    },
+    {
+        imageSrc: '/assets/img/company/cake-gel.png',
+        name: 'Cake Gel',
+        description: 'Stabilizes the bubbles in the batter, improves cake volume, crust appearance, and reduces cake production costs.',
+        imageWidth: 465,
+    },
+    {
+        imageSrc: '/assets/img/company/product-bakers-fat.jpg',
+        name: 'Fastbakes Baker\'s Fat',
+        description: 'Supports dough tolerance and uniform loaf quality at scale.',
+        imageWidth: 465,
+    },
+    {
+        imageSrc: '/assets/img/company/pan-grease.png',
+        name: 'Pan Grease',
+        description: 'Prevents sticking of baked products in baking pans/tins',
+    },
+];
+
 export default function ProductSlider({ showDots = false }: ProductSliderProps) {
     return (
         <div className="swiper project-slider pt-5">
             <Swiper {...swiperOptions} className="swiper-wrapper">
-                <SwiperSlide>
-                    <div className="project-items">
-                        <div className="project-image">
-                            <AppImage src="/assets/img/project/01.jpg" alt="project-img" width={450} height={450} />
-                            <div className="project-content">
-                                <p>Manufacturing</p>
-                                <h4>
-                                    <Link href="/project-details">Fastbakes Production Growth</Link>
-                                </h4>
-                                <Link href="/project-details" className="icon">
-                                    <i className="fa-solid fa-arrow-right" />
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="project-items">
-                        <div className="project-image">
-                            <AppImage src="/assets/img/project/02.jpg" alt="project-img" width={465} height={450} />
-                            <div className="project-content">
-                                <p>Quality</p>
-                                <h4>
-                                    <Link href="/project-details">Ingredient Quality Assurance</Link>
-                                </h4>
-                                <Link href="/project-details" className="icon">
-                                    <i className="fa-solid fa-arrow-right" />
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="project-items">
-                        <div className="project-image">
-                            <AppImage src="/assets/img/project/03.jpg" alt="project-img" width={465} height={450} />
-                            <div className="project-content">
-                                <p>Innovation</p>
-                                <h4>
-                                    <Link href="/project-details">Research-Driven Product Solutions</Link>
-                                </h4>
-                                <Link href="/project-details" className="icon">
-                                    <i className="fa-solid fa-arrow-right" />
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="project-items">
-                        <div className="project-image">
-                            <AppImage src="/assets/img/project/04.jpg" alt="project-img" width={450} height={450} />
-                            <div className="project-content">
-                                <p>Expansion</p>
-                                <h4>
-                                    <Link href="/project-details">Uganda to Tanzania Market Reach</Link>
-                                </h4>
-                                <Link href="/project-details" className="icon">
-                                    <i className="fa-solid fa-arrow-right" />
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="project-items">
-                        <div className="project-image">
-                            <AppImage src="/assets/img/project/03.jpg" alt="project-img" width={465} height={450} />
-                            <div className="project-content">
-                                <p>Partnerships</p>
-                                <h4>
-                                    <Link href="/project-details">Long-Term Client Relationships</Link>
-                                </h4>
-                                <Link href="/project-details" className="icon">
-                                    <i className="fa-solid fa-arrow-right" />
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="project-items">
-                        <div className="project-image">
-                            <AppImage src="/assets/img/project/04.jpg" alt="project-img" width={450} height={450} />
-                            <div className="project-content">
-                                <p>Sustainability</p>
-                                <h4>
-                                    <Link href="/project-details">Sustainable Industry Solutions</Link>
-                                </h4>
-                                <Link href="/project-details" className="icon">
-                                    <i className="fa-solid fa-arrow-right" />
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                </SwiperSlide>
+                {productSlides.map((item) => (
+                    <SwiperSlide key={item.name}>
+                        <ProductSlideCard item={item} />
+                    </SwiperSlide>
+                ))}
             </Swiper>
 
             {showDots &&

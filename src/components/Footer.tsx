@@ -14,8 +14,8 @@ export default function Footer() {
             <AppImage src="/assets/img/footer-shape-2.png" alt="shape-img" width={288} height={383} />
           </div>
           <div className="container">
-            <div className="row">
-              <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+            <div className="row g-4">
+              <div className="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                 <div className="single-footer-widget">
                   <div className="widget-head">
                     <Link href="/" className='header-logo d-flex align-items-center gap-2'>
@@ -38,7 +38,7 @@ export default function Footer() {
                   </div>
                 </div>
               </div>
-              <div className="col-xl-2 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".5s">
+              <div className="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".5s">
                 <div className="single-footer-widget">
                   <div className="widget-head">
                     <h3>Quick Links</h3>
@@ -53,7 +53,7 @@ export default function Footer() {
                     <li>
                       <Link href="/services">
                         <i className="fa-solid fa-chevron-right" />
-                        Our Solutions
+                        Our Products
                       </Link>
                     </li>
                     <li>
@@ -78,53 +78,6 @@ export default function Footer() {
                 </div>
               </div>
               <div className="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".7s">
-                <div className="single-footer-widget style-margin">
-                  <div className="widget-head">
-                    <h3>Recent Posts</h3>
-                  </div>
-                  <div className="recent-post-area">
-                    <div className="recent-post-items">
-                      <div className="thumb">
-                        <AppImage src="/assets/img/news/pp1.jpg" alt="post-img" width={78} height={79} />
-                      </div>
-                      <div className="content">
-                        <ul className="post-date">
-                          <li>
-                            <i className="fa-solid fa-calendar-days me-2" />
-                            20 Feb, 2024
-                          </li>
-                        </ul>
-                        <h6>
-                          <Link href="/news-details">
-                            Top 5 Most Famous <br />
-                            Baking Trends In 2026
-                          </Link>
-                        </h6>
-                      </div>
-                    </div>
-                    <div className="recent-post-items mb-0">
-                      <div className="thumb">
-                        <AppImage src="/assets/img/news/pp2.jpg" alt="post-img" width={78} height={79} />
-                      </div>
-                      <div className="content">
-                        <ul className="post-date">
-                          <li>
-                            <i className="fa-solid fa-calendar-days me-2" />
-                            15 Dec, 2024
-                          </li>
-                        </ul>
-                        <h6>
-                          <Link href="/news-details">
-                            The Importance Of Cake Gels <br />
-                            In Baking
-                          </Link>
-                        </h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-3 col-lg-4 col-md-6 ps-xl-5 wow fadeInUp" data-wow-delay=".9s">
                 <div className="single-footer-widget">
                   <div className="widget-head">
                     <h3>Contact Us</h3>
@@ -133,11 +86,11 @@ export default function Footer() {
                     <ul className="contact-info">
                       <li>
                         <i className="fas fa-map-marker-alt" />
-                        Plot 16, Chango&apos;mbe Area, Dar es Salaam, Tanzania
+                        SMS House, 2nd Floor, 7th Street Industrial Area, Kampala, Uganda
                       </li>
                       <li>
                         <i className="fa-solid fa-phone-volume" />
-                        <Link href="tel:+255796317866">+255 796 317 866</Link>
+                        <Link href="tel:+256703412545">+256 703 412 545</Link>
                       </li>
                       <li>
                         <i className="fa-regular fa-envelope" />

@@ -85,7 +85,7 @@ const ContactPage = () => {
                       <div className="content">
                         <p>Location (HQ)</p>
                         <h3>
-                          Kampala, Uganda
+                          SMS House, 2nd Floor, 7th Street Industrial Area, Kampala, Uganda
                         </h3>
                       </div>
                     </div>

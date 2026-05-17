@@ -2,6 +2,35 @@ import Link from 'next/link'
 import { ProductInfoCard } from './ProductInfo';
 import { ProductInfo } from '@/app/services/page';
 
+
+
+const products: ProductInfo[] = [
+    {
+        imageSrc: '/assets/img/company/product-cake-improver.jpg',
+        iconSrc: '/assets/img/service/icon/ingredient.png',
+        title: 'CR 600 + CR 630',
+        description: 'Improves cake crust color and freshness.',
+    },
+    {
+        imageSrc: '/assets/img/company/cake-gel.png',
+        iconSrc: '/assets/img/service/icon/ingredient.png',
+        title: 'Cake Gel',
+        description: 'Stabilizes the bubbles in the batter, improves cake volume, crust appearance, and reduces cake production costs.',
+    },
+    {
+        imageSrc: '/assets/img/company/product-bakers-fat.jpg',
+        iconSrc: '/assets/img/service/icon/ingredient.png',
+        title: 'Fastbakes Baker\'s Fat',
+        description: 'Supports dough tolerance and uniform loaf quality at scale.',
+    },
+    {
+        imageSrc: '/assets/img/company/pan-grease.png',
+        iconSrc: '/assets/img/service/icon/ingredient.png',
+        title: 'Pan Grease',
+        description: 'Prevents sticking of baked products in baking pans/tins',
+    },
+];
+
 const productItems: ProductInfo[] = [
     {
         imageSrc: '/assets/img/company/product-cake-gel-3-sizes.jpg',
@@ -35,22 +64,22 @@ const productItems: ProductInfo[] = [
 
 export default function Service() {
     return (
-        <section className="service-section-3 pb-0 fix section-padding bg-cover" style={{ backgroundImage: 'url("assets/img/service/service-bg-3.jpg")' }}>
+        <section className="service-section-3 pb-0 fix bg-cover" style={{ backgroundImage: 'url("assets/img/service/service-bg-3.jpg")' }}>
             <div className="container">
                 <div className="section-title-area">
                     <div className="section-title">
                         <span>Our Specializations</span>
                         <h2>
-                            Premium Ingredient Solutions <br /> For East Africa
+                            Premium Ingredients <br /> For East Africa
                         </h2>
                     </div>
                     <Link href="/services" className="theme-btn">
-                        Explore All Solutions
+                        Explore All Products
                         <i className="fa-solid fa-arrow-right-long" />
                     </Link>
                 </div>
                 <div className="row">
-                    {productItems.map((item) => (
+                    {products.map((item) => (
                         <ProductInfoCard
                             key={item.title}
                             imageSrc={item.imageSrc}
