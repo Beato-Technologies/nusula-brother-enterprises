@@ -15,7 +15,7 @@ interface HeroSlide {
 
 const slides: HeroSlide[] = [
     {
-        backgroundImage: "assets/img/hero/slidehome1.png",
+        backgroundImage: "assets/img/hero/hero-cr600-cr630.webp",
         backgroundPosition: "center center",
         subtitle: "Food Ingredients Excellence Since 2018",
         titleLine1: "Fastbakes Food Ingredients",
@@ -23,7 +23,7 @@ const slides: HeroSlide[] = [
         description: "Nusula and Brother Enterprises is a professional trading and manufacturing company in food ingredients, led by experienced directors and senior executives in their fields.",
     },
     {
-        backgroundImage: "assets/img/hero/slidehomecr630.png",
+        backgroundImage: "assets/img/hero/Slidehome1.webp",
         backgroundPosition: "center center",
         subtitle: "Built on Research and Innovation",
         titleLine1: "From Trading Roots",
@@ -83,6 +83,7 @@ export default function Hero() {
                     {slides.map((slide, index) => (
                         <SwiperSlide key={index}>
                             <div className="slider-image bg-cover" style={{ backgroundImage: `url("${slide.backgroundImage}")`, backgroundPosition: slide.backgroundPosition ?? "center center" }} />
+                            <div className="hero-left-overlay" aria-hidden="true" />
                             <div className="container">
                                 <div className="row g-4 align-items-center">
                                     <div className="col-lg-8">

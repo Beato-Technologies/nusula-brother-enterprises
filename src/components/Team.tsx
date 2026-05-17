@@ -27,7 +27,7 @@ const leadershipMembers: TeamMember[] = [
 
 export default function Team() {
     return (
-        <section className="team-section-3 fix section-padding section-bg" id="team">
+        <section className="team-section-3 fix pt-4 section-padding section-bg" id="team">
             <div className="line-shape">
                 <AppImage src="/assets/img/team/line-shape.png" alt="shape-img" width={465} height={605} />
             </div>

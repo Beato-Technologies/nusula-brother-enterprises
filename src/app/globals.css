@@ -167,20 +167,51 @@ code {
 }
 
 .hero-bakhresa .slider-image::before {
+  background: none;
+  opacity: 0;
+}
+
+.hero-bakhresa .hero-slider .swiper-slide {
+  position: relative;
+}
+
+.hero-bakhresa .hero-left-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 55%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
   background:
     linear-gradient(
-      100deg,
-      rgba(6, 20, 50, 0.88) 18%,
-      rgba(6, 20, 50, 0.62) 48%,
-      rgba(6, 20, 50, 0.22) 100%
+      90deg,
+      rgba(6, 20, 50, 0.92) 0%,
+      rgba(6, 20, 50, 0.74) 68%,
+      rgba(6, 20, 50, 0) 100%
     ),
-    linear-gradient(180deg, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.45) 100%);
-  opacity: 1;
+    linear-gradient(180deg, rgba(0, 0, 0, 0.22) 0%, rgba(0, 0, 0, 0.42) 100%);
+}
+
+@media (max-width: 991px) {
+  .hero-bakhresa .hero-left-overlay {
+    width: 100%;
+    background:
+      linear-gradient(
+        180deg,
+        rgba(6, 20, 50, 0.72) 0%,
+        rgba(6, 20, 50, 0.58) 42%,
+        rgba(6, 20, 50, 0.38) 100%
+      ),
+      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.35) 100%);
+  }
 }
 
 .hero-bakhresa .hero-content--bakhresa {
   max-width: 760px;
   border-left: 4px solid rgba(255, 255, 255, 0.72);
+  padding-top: 100px;
+  padding-bottom: 100px;
   padding-left: 28px;
 }
 

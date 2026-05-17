@@ -11,7 +11,7 @@ const swiperOptions = {
     loop: true,
     spaceBetween: 30,
     autoplay: {
-        delay: 1500,
+        delay: 5000,
         disableOnInteraction: false,
     },
     navigation: {
