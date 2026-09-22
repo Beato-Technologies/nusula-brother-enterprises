@@ -8,21 +8,12 @@ const executiveLeadership: TeamMember[] = [
   { name: 'Dr. Ismail Tijjani Kabwanga, PhD', role: 'Director, Quality Control & Human Resources', image: '/assets/img/team/Ismail.webp' },
 ];
 
-const ugandaOperations: TeamMember[] = [
-  { name: 'Mirembe Mida', role: 'General Manager - Factory', image: '/assets/img/team/generic.jpg' },
-  { name: 'Walujjo Yusufu', role: 'Production Manager', image: '/assets/img/team/generic.jpg' },
-  { name: 'Wanyenze Mariam', role: 'Sales Manager', image: '/assets/img/team/Wanyenze.jpeg' },
-  { name: 'Muyonjo Adam', role: 'Sales Executive', image: '/assets/img/team/Adam.png' },
-  { name: 'Nabosa Mariam', role: 'Sales Executive', image: '/assets/img/team/generic.jpg' },
-  { name: 'Ochweda Musa Abdallah', role: 'Head of Transport / Logistics', image: '/assets/img/team/generic.jpg' },
-  { name: 'Ahumuza Afiswa', role: 'Accounts Manager', image: '/assets/img/team/Afiswa.jpeg' },
-];
+const ugandaOperations: TeamMember[] = [];
 
 const tanzaniaTeam: TeamMember[] = [
-  { name: 'Lilian Reuben', role: 'Country General Manager', image: '/assets/img/team/generic.jpg' },
+  { name: 'Lilian Reuben', role: 'Operation Manager', image: '/assets/img/team/generic.jpg' },
   { name: 'Patrick Fidelis', role: 'Production / QC Manager', image: '/assets/img/team/Mabala.jpeg' },
   { name: 'Jenifer Mushi', role: 'Sales Executive', image: '/assets/img/team/Mushi.jpeg' },
-  { name: 'Hellena Felix Muyenga', role: 'Sales Executive', image: '/assets/img/team/Helena.jpeg' },
 ];
 
 const TeamPage = () => {
@@ -55,14 +46,14 @@ const TeamPage = () => {
             cardClassName="team-card-items mt-0 h-100"
             nameHrefFallback="/team"
           />
-          <TeamMembersBlock
+          {/* <TeamMembersBlock
             title="Uganda Operations Team"
             members={ugandaOperations}
             wrapperClassName="mt-5"
             rowClassName="row g-4 mt-1"
             cardClassName="team-card-items mt-0 h-100"
             nameHrefFallback="/team"
-          />
+          /> */}
           <TeamMembersBlock
             title="Tanzania Team - Dar es Salaam"
             members={tanzaniaTeam}

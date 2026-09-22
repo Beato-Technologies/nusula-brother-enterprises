@@ -57,7 +57,7 @@ const Header = ({ scroll }: HeaderProps) => {
                     <Link href="/" className="header-logo header-logo--bold d-flex align-items-center gap-2">
                       <Image src="/assets/img/logo/Logo.png" alt="logo-img" width={56} height={56} className="logo-mark" />
                       <div className="logo-wordmark text-uppercase">
-                        <span className="logo-wordmark__top">Nusula Brother</span>
+                        <span className="logo-wordmark__top">Nusula & Brother</span>
                         <span className="logo-wordmark__bottom">Enterprises</span>
                       </div>
                     </Link>

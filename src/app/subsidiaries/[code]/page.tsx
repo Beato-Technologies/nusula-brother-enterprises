@@ -17,25 +17,25 @@ type SubsidiaryData = {
 
 const subsidiaries: Record<string, SubsidiaryData> = {
     tanzania: {
-        name: 'NBE Tanzania',
+        name: 'NBC LTD',
         tagline: 'Regional Distribution & Trade Hub',
         established: 'Est. 2020',
         address: "Plot 16, Chango'mbe Area, Dar es Salaam, Tanzania",
         phone: '+255 796 317 866',
         email: 'tz@nusulabrotherenterprises.com',
         overview:
-            'NBE Tanzania is the East African distribution arm of Nusula and Brother Enterprises, operating out of Dar es Salaam. The office connects Uganda-manufactured food ingredients with bakeries, confectioneries, and food processors across Tanzania, ensuring reliable supply and technical support throughout the region.',
+            'NBC LTD is the East African distribution arm of Nusula and Brother Enterprises, operating out of Dar es Salaam. The office connects Uganda-manufactured food ingredients with bakeries, confectioneries, and food processors across Tanzania, ensuring reliable supply and technical support throughout the region.',
         role: 'The Tanzania office serves as the primary point of contact for local clients seeking Fastbakes-branded products. Our in-country team handles logistics coordination, client onboarding, and after-sale support — ensuring every delivery meets our group-wide quality standards.',
         highlights: [
             {
                 heading: 'Market Entry',
                 year: '2020',
-                body: "NBE Tanzania was established to address growing demand for premium baking ingredients in East Africa. Initial operations focused on sourcing and distributing Fastbakes cake premixes and emulsifiers to Dar es Salaam's expanding bakery sector.",
+                body: "NBC LTD was established to address growing demand for premium baking ingredients in East Africa. Initial operations focused on sourcing and distributing Fastbakes cake premixes and emulsifiers to Dar es Salaam's expanding bakery sector.",
             },
             {
                 heading: 'Distribution Expansion',
                 year: '2022 – Present',
-                body: 'The subsidiary broadened its scope to include specialty traded ingredients — caramel colour, xanthan gum, gelatin, and customised stabiliser blends — complementing the manufactured range shipped from Uganda. Today, NBE Tanzania serves clients across Dar es Salaam, Dodoma, and Mwanza.',
+                body: 'The subsidiary broadened its scope to include specialty traded ingredients — caramel colour, xanthan gum, gelatin, and customised stabiliser blends — complementing the manufactured range shipped from Uganda. Today, NBC LTD serves clients across Dar es Salaam, Dodoma, and Mwanza.'
             },
         ],
         products: [
