@@ -3,12 +3,10 @@ import Breadcrumb from '@/components/BreadCrumb';
 import TeamMembersBlock, { TeamMember } from '@/components/TeamMembersBlock';
 
 const executiveLeadership: TeamMember[] = [
-  { name: 'Hajjati Nemwa Nusula Njogi', role: 'Chief Executive Officer', image: '/assets/img/team/Nusula.webp' },
-  { name: 'Mr. Lujja Nasur Wawire', role: 'Executive Director (General Manager)', image: '/assets/img/team/Lujja.webp' },
-  { name: 'Dr. Ismail Tijjani Kabwanga, PhD', role: 'Director, Quality Control & Human Resources', image: '/assets/img/team/Ismail.webp' },
+  { name: 'Hajjati Nemwa Nusula N', role: 'Chief Executive Officer', image: '/assets/img/team/hajjati.webp' },
+  { name: 'Mr. Lujja N W', role: 'General Manager', image: '/assets/img/team/lujja.jpeg' },
+  { name: 'Dr. K Ismail Tijjani', role: 'Director, Quality Control & Human Resources', image: '/assets/img/team/Ismail.webp' },
 ];
-
-const ugandaOperations: TeamMember[] = [];
 
 const tanzaniaTeam: TeamMember[] = [
   { name: 'Lilian Reuben', role: 'Operation Manager', image: '/assets/img/team/generic.jpg' },
@@ -25,7 +23,7 @@ const TeamPage = () => {
         bgClasses="bg-cover"
         bgStyle={{ backgroundPositionY: '38%' }}
         overlayOpacity={0.5} />
-      <section className="team-section-4 section-padding section-bg">
+      <section className="team-section-4 section-padding section-bg team-page-uniform-images">
         <div className="container">
           <div className="section-title text-center">
             <span className="wow fadeInUp">Our Team</span>
@@ -46,14 +44,6 @@ const TeamPage = () => {
             cardClassName="team-card-items mt-0 h-100"
             nameHrefFallback="/team"
           />
-          {/* <TeamMembersBlock
-            title="Uganda Operations Team"
-            members={ugandaOperations}
-            wrapperClassName="mt-5"
-            rowClassName="row g-4 mt-1"
-            cardClassName="team-card-items mt-0 h-100"
-            nameHrefFallback="/team"
-          /> */}
           <TeamMembersBlock
             title="Tanzania Team - Dar es Salaam"
             members={tanzaniaTeam}

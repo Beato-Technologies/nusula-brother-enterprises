@@ -4,26 +4,10 @@ import TeamMembersBlock, { TeamMember } from '@/components/TeamMembersBlock';
 import Link from 'next/link';
 
 const aboutTeamMembers: TeamMember[] = [
-  {
-    name: 'Dr. Ismail Tijjani Kabwanga, PhD',
-    role: 'Director, Quality Control & H/R',
-    image: '/assets/img/team/Ismail.webp',
-  },
-  {
-    name: 'Mirembe Mida',
-    role: 'General Manager - Factory',
-    image: '/assets/img/team/generic.jpg',
-  },
-  {
-    name: 'Lilian Reuben',
-    role: 'Country General Manager - Tanzania',
-    image: '/assets/img/team/generic.jpg',
-  },
-  {
-    name: 'Ochweda Musa Abdallah',
-    role: 'Head of Transport / Logistics',
-    image: '/assets/img/team/generic.jpg',
-  },
+  { name: 'Mr. Lujja N W', role: 'General Manager', image: '/assets/img/team/lujja.jpeg' },
+  { name: 'Dr. K Ismail Tijjani', role: 'Director, Quality Control & Human Resources', image: '/assets/img/team/Ismail.webp' },
+  { name: 'Lilian Reuben', role: 'Operation Manager', image: '/assets/img/team/generic.jpg' },
+  { name: 'Patrick Fidelis', role: 'Production / QC Manager', image: '/assets/img/team/Mabala.jpeg' },
 ];
 
 export default function AboutPage() {
